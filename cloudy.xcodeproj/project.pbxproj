@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF167A8E14FA9B5B00C9DA0B /* CLItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */; };
+		FF97058914FA88B60083413C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058814FA88B60083413C /* UIKit.framework */; };
+		FF97058B14FA88B60083413C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058A14FA88B60083413C /* Foundation.framework */; };
+		FF97058D14FA88B60083413C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058C14FA88B60083413C /* CoreGraphics.framework */; };
+		FF97058F14FA88B60083413C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058E14FA88B60083413C /* CoreData.framework */; };
+		FF97059514FA88B60083413C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF97059314FA88B60083413C /* InfoPlist.strings */; };
+		FF97059714FA88B60083413C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97059614FA88B60083413C /* main.m */; };
+		FF97059B14FA88B60083413C /* CLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97059A14FA88B60083413C /* CLAppDelegate.m */; };
+		FF97059E14FA88B60083413C /* cloudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF97059C14FA88B60083413C /* cloudy.xcdatamodeld */; };
+		FF9705A614FA88B70083413C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF9705A514FA88B70083413C /* SenTestingKit.framework */; };
+		FF9705A714FA88B70083413C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058814FA88B60083413C /* UIKit.framework */; };
+		FF9705A814FA88B70083413C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058A14FA88B60083413C /* Foundation.framework */; };
+		FF9705A914FA88B70083413C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058E14FA88B60083413C /* CoreData.framework */; };
+		FF9705B114FA88B70083413C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF9705AF14FA88B70083413C /* InfoPlist.strings */; };
+		FF9705B414FA88B70083413C /* cloudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9705B314FA88B70083413C /* cloudyTests.m */; };
+		FF97FC4B14FA981900CBCFF1 /* CLStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF97FC4A14FA981900CBCFF1 /* CLStoryboard.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF9705AA14FA88B70083413C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF97057B14FA88B60083413C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF97058314FA88B60083413C;
+			remoteInfo = cloudy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF167A8B14FA9A9D00C9DA0B /* cloudy 1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "cloudy 1.xcdatamodel"; sourceTree = "<group>"; };
+		FF167A8C14FA9B5B00C9DA0B /* CLItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLItemsViewController.h; sourceTree = "<group>"; };
+		FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLItemsViewController.m; sourceTree = "<group>"; };
+		FF97058414FA88B60083413C /* cloudy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cloudy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF97058814FA88B60083413C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FF97058A14FA88B60083413C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FF97058C14FA88B60083413C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FF97058E14FA88B60083413C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FF97059214FA88B60083413C /* cloudy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cloudy-Info.plist"; sourceTree = "<group>"; };
+		FF97059414FA88B60083413C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF97059614FA88B60083413C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF97059814FA88B60083413C /* cloudy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cloudy-Prefix.pch"; sourceTree = "<group>"; };
+		FF97059914FA88B60083413C /* CLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLAppDelegate.h; sourceTree = "<group>"; };
+		FF97059A14FA88B60083413C /* CLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLAppDelegate.m; sourceTree = "<group>"; };
+		FF97059D14FA88B60083413C /* cloudy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = cloudy.xcdatamodel; sourceTree = "<group>"; };
+		FF9705A414FA88B70083413C /* cloudyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = cloudyTests.octest; path = "cloudy-iOS-tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF9705A514FA88B70083413C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FF9705AE14FA88B70083413C /* cloudyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cloudyTests-Info.plist"; sourceTree = "<group>"; };
+		FF9705B014FA88B70083413C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF9705B214FA88B70083413C /* cloudyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cloudyTests.h; sourceTree = "<group>"; };
+		FF9705B314FA88B70083413C /* cloudyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cloudyTests.m; sourceTree = "<group>"; };
+		FF9705C214FA89C80083413C /* cloudy-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "cloudy-iOS.entitlements"; sourceTree = "<group>"; };
+		FF97FC4A14FA981900CBCFF1 /* CLStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CLStoryboard.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF97058114FA88B60083413C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF97058914FA88B60083413C /* UIKit.framework in Frameworks */,
+				FF97058B14FA88B60083413C /* Foundation.framework in Frameworks */,
+				FF97058D14FA88B60083413C /* CoreGraphics.framework in Frameworks */,
+				FF97058F14FA88B60083413C /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9705A014FA88B70083413C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF9705A614FA88B70083413C /* SenTestingKit.framework in Frameworks */,
+				FF9705A714FA88B70083413C /* UIKit.framework in Frameworks */,
+				FF9705A814FA88B70083413C /* Foundation.framework in Frameworks */,
+				FF9705A914FA88B70083413C /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF97057914FA88B60083413C = {
+			isa = PBXGroup;
+			children = (
+				FF9705C214FA89C80083413C /* cloudy-iOS.entitlements */,
+				FF97059014FA88B60083413C /* Scaffold */,
+				FF9705AC14FA88B70083413C /* cloudyTests */,
+				FF97058714FA88B60083413C /* Frameworks */,
+				FF97058514FA88B60083413C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF97058514FA88B60083413C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF97058414FA88B60083413C /* cloudy-iOS.app */,
+				FF9705A414FA88B70083413C /* cloudyTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF97058714FA88B60083413C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF97058814FA88B60083413C /* UIKit.framework */,
+				FF97058A14FA88B60083413C /* Foundation.framework */,
+				FF97058C14FA88B60083413C /* CoreGraphics.framework */,
+				FF97058E14FA88B60083413C /* CoreData.framework */,
+				FF9705A514FA88B70083413C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF97059014FA88B60083413C /* Scaffold */ = {
+			isa = PBXGroup;
+			children = (
+				FF97059914FA88B60083413C /* CLAppDelegate.h */,
+				FF97059A14FA88B60083413C /* CLAppDelegate.m */,
+				FF97FC4A14FA981900CBCFF1 /* CLStoryboard.storyboard */,
+				FF167A8C14FA9B5B00C9DA0B /* CLItemsViewController.h */,
+				FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */,
+				FF97059C14FA88B60083413C /* cloudy.xcdatamodeld */,
+				FF97059114FA88B60083413C /* Supporting Files */,
+			);
+			name = Scaffold;
+			path = cloudy;
+			sourceTree = "<group>";
+		};
+		FF97059114FA88B60083413C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF97059214FA88B60083413C /* cloudy-Info.plist */,
+				FF97059314FA88B60083413C /* InfoPlist.strings */,
+				FF97059614FA88B60083413C /* main.m */,
+				FF97059814FA88B60083413C /* cloudy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF9705AC14FA88B70083413C /* cloudyTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF9705B214FA88B70083413C /* cloudyTests.h */,
+				FF9705B314FA88B70083413C /* cloudyTests.m */,
+				FF9705AD14FA88B70083413C /* Supporting Files */,
+			);
+			path = cloudyTests;
+			sourceTree = "<group>";
+		};
+		FF9705AD14FA88B70083413C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF9705AE14FA88B70083413C /* cloudyTests-Info.plist */,
+				FF9705AF14FA88B70083413C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF97058314FA88B60083413C /* cloudy-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF9705B714FA88B70083413C /* Build configuration list for PBXNativeTarget "cloudy-iOS" */;
+			buildPhases = (
+				FF97058014FA88B60083413C /* Sources */,
+				FF97058114FA88B60083413C /* Frameworks */,
+				FF97058214FA88B60083413C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cloudy-iOS";
+			productName = cloudy;
+			productReference = FF97058414FA88B60083413C /* cloudy-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF9705A314FA88B70083413C /* cloudy-iOS-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF9705BA14FA88B70083413C /* Build configuration list for PBXNativeTarget "cloudy-iOS-tests" */;
+			buildPhases = (
+				FF97059F14FA88B70083413C /* Sources */,
+				FF9705A014FA88B70083413C /* Frameworks */,
+				FF9705A114FA88B70083413C /* Resources */,
+				FF9705A214FA88B70083413C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF9705AB14FA88B70083413C /* PBXTargetDependency */,
+			);
+			name = "cloudy-iOS-tests";
+			productName = cloudyTests;
+			productReference = FF9705A414FA88B70083413C /* cloudyTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF97057B14FA88B60083413C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CL;
+			};
+			buildConfigurationList = FF97057E14FA88B60083413C /* Build configuration list for PBXProject "cloudy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FF97057914FA88B60083413C;
+			productRefGroup = FF97058514FA88B60083413C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF97058314FA88B60083413C /* cloudy-iOS */,
+				FF9705A314FA88B70083413C /* cloudy-iOS-tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF97058214FA88B60083413C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF97059514FA88B60083413C /* InfoPlist.strings in Resources */,
+				FF97FC4B14FA981900CBCFF1 /* CLStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9705A114FA88B70083413C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF9705B114FA88B70083413C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FF9705A214FA88B70083413C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF97058014FA88B60083413C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF97059714FA88B60083413C /* main.m in Sources */,
+				FF97059B14FA88B60083413C /* CLAppDelegate.m in Sources */,
+				FF97059E14FA88B60083413C /* cloudy.xcdatamodeld in Sources */,
+				FF167A8E14FA9B5B00C9DA0B /* CLItemsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF97059F14FA88B70083413C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF9705B414FA88B70083413C /* cloudyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF9705AB14FA88B70083413C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF97058314FA88B60083413C /* cloudy-iOS */;
+			targetProxy = FF9705AA14FA88B70083413C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF97059314FA88B60083413C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF97059414FA88B60083413C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FF9705AF14FA88B70083413C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF9705B014FA88B70083413C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF9705B514FA88B70083413C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF9705B614FA88B70083413C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF9705B814FA88B70083413C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "cloudy-iOS.entitlements";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cloudy/cloudy-Prefix.pch";
+				INFOPLIST_FILE = "cloudy/cloudy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FF9705B914FA88B70083413C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "cloudy-iOS.entitlements";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cloudy/cloudy-Prefix.pch";
+				INFOPLIST_FILE = "cloudy/cloudy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FF9705BB14FA88B70083413C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cloudy.app/cloudy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cloudy/cloudy-Prefix.pch";
+				INFOPLIST_FILE = "cloudyTests/cloudyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FF9705BC14FA88B70083413C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cloudy.app/cloudy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cloudy/cloudy-Prefix.pch";
+				INFOPLIST_FILE = "cloudyTests/cloudyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF97057E14FA88B60083413C /* Build configuration list for PBXProject "cloudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF9705B514FA88B70083413C /* Debug */,
+				FF9705B614FA88B70083413C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF9705B714FA88B70083413C /* Build configuration list for PBXNativeTarget "cloudy-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF9705B814FA88B70083413C /* Debug */,
+				FF9705B914FA88B70083413C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF9705BA14FA88B70083413C /* Build configuration list for PBXNativeTarget "cloudy-iOS-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF9705BB14FA88B70083413C /* Debug */,
+				FF9705BC14FA88B70083413C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF97059C14FA88B60083413C /* cloudy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF167A8B14FA9A9D00C9DA0B /* cloudy 1.xcdatamodel */,
+				FF97059D14FA88B60083413C /* cloudy.xcdatamodel */,
+			);
+			currentVersion = FF167A8B14FA9A9D00C9DA0B /* cloudy 1.xcdatamodel */;
+			path = cloudy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FF97057B14FA88B60083413C /* Project object */;
+}
