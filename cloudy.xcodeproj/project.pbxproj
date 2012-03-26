@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		FF167A8E14FA9B5B00C9DA0B /* CLItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */; };
 		FF167A9114FAA11200C9DA0B /* CLDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = FF167A9014FAA11200C9DA0B /* CLDefines.m */; };
+		FF6C27BB1520E9FB0000371A /* CLModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF6C27B91520E9FB0000371A /* CLModel.xcdatamodeld */; };
+		FF7AF0FE1520E32900B04AAB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7AF0FD1520E32900B04AAB /* Parse.framework */; };
+		FF7AF1061520E37600B04AAB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7AF1001520E37600B04AAB /* AudioToolbox.framework */; };
+		FF7AF1071520E37600B04AAB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7AF1011520E37600B04AAB /* CFNetwork.framework */; };
+		FF7AF1081520E37600B04AAB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7AF1021520E37600B04AAB /* libz.dylib */; };
+		FF7AF1091520E37600B04AAB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7AF1031520E37600B04AAB /* QuartzCore.framework */; };
+		FF7AF10A1520E37600B04AAB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7AF1041520E37600B04AAB /* Security.framework */; };
+		FF7AF10B1520E37600B04AAB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7AF1051520E37600B04AAB /* SystemConfiguration.framework */; };
+		FF7AF10D1520E38200B04AAB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7AF10C1520E38200B04AAB /* MobileCoreServices.framework */; };
 		FF97058914FA88B60083413C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058814FA88B60083413C /* UIKit.framework */; };
 		FF97058B14FA88B60083413C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058A14FA88B60083413C /* Foundation.framework */; };
 		FF97058D14FA88B60083413C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058C14FA88B60083413C /* CoreGraphics.framework */; };
@@ -16,7 +25,6 @@
 		FF97059514FA88B60083413C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF97059314FA88B60083413C /* InfoPlist.strings */; };
 		FF97059714FA88B60083413C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97059614FA88B60083413C /* main.m */; };
 		FF97059B14FA88B60083413C /* CLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97059A14FA88B60083413C /* CLAppDelegate.m */; };
-		FF97059E14FA88B60083413C /* cloudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF97059C14FA88B60083413C /* cloudy.xcdatamodeld */; };
 		FF9705A614FA88B70083413C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF9705A514FA88B70083413C /* SenTestingKit.framework */; };
 		FF9705A714FA88B70083413C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058814FA88B60083413C /* UIKit.framework */; };
 		FF9705A814FA88B70083413C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058A14FA88B60083413C /* Foundation.framework */; };
@@ -37,11 +45,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FF167A8B14FA9A9D00C9DA0B /* cloudy 1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "cloudy 1.xcdatamodel"; sourceTree = "<group>"; };
-		FF167A8C14FA9B5B00C9DA0B /* CLItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLItemsViewController.h; sourceTree = "<group>"; };
-		FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLItemsViewController.m; sourceTree = "<group>"; };
-		FF167A8F14FAA0D700C9DA0B /* CLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDefines.h; sourceTree = "<group>"; };
-		FF167A9014FAA11200C9DA0B /* CLDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDefines.m; sourceTree = "<group>"; };
+		FF167A8C14FA9B5B00C9DA0B /* CLItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLItemsViewController.h; path = cloudy/CLItemsViewController.h; sourceTree = "<group>"; };
+		FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLItemsViewController.m; path = cloudy/CLItemsViewController.m; sourceTree = "<group>"; };
+		FF167A8F14FAA0D700C9DA0B /* CLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLDefines.h; path = cloudy/CLDefines.h; sourceTree = "<group>"; };
+		FF167A9014FAA11200C9DA0B /* CLDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLDefines.m; path = cloudy/CLDefines.m; sourceTree = "<group>"; };
+		FF6C27BA1520E9FB0000371A /* CLModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CLModel.xcdatamodel; sourceTree = "<group>"; };
+		FF7AF0FD1520E32900B04AAB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = externals/ParseSDK/Parse.framework; sourceTree = "<group>"; };
+		FF7AF1001520E37600B04AAB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FF7AF1011520E37600B04AAB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FF7AF1021520E37600B04AAB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		FF7AF1031520E37600B04AAB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FF7AF1041520E37600B04AAB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FF7AF1051520E37600B04AAB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FF7AF10C1520E38200B04AAB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		FF97058414FA88B60083413C /* cloudy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cloudy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF97058814FA88B60083413C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FF97058A14FA88B60083413C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,17 +67,16 @@
 		FF97059414FA88B60083413C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FF97059614FA88B60083413C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF97059814FA88B60083413C /* cloudy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cloudy-Prefix.pch"; sourceTree = "<group>"; };
-		FF97059914FA88B60083413C /* CLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLAppDelegate.h; sourceTree = "<group>"; };
-		FF97059A14FA88B60083413C /* CLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLAppDelegate.m; sourceTree = "<group>"; };
-		FF97059D14FA88B60083413C /* cloudy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = cloudy.xcdatamodel; sourceTree = "<group>"; };
+		FF97059914FA88B60083413C /* CLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CLAppDelegate.h; path = cloudy/CLAppDelegate.h; sourceTree = "<group>"; };
+		FF97059A14FA88B60083413C /* CLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CLAppDelegate.m; path = cloudy/CLAppDelegate.m; sourceTree = "<group>"; };
 		FF9705A414FA88B70083413C /* cloudyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = cloudyTests.octest; path = "cloudy-iOS-tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9705A514FA88B70083413C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		FF9705AE14FA88B70083413C /* cloudyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cloudyTests-Info.plist"; sourceTree = "<group>"; };
 		FF9705B014FA88B70083413C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FF9705B214FA88B70083413C /* cloudyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cloudyTests.h; sourceTree = "<group>"; };
 		FF9705B314FA88B70083413C /* cloudyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cloudyTests.m; sourceTree = "<group>"; };
-		FF9705C214FA89C80083413C /* cloudy-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "cloudy-iOS.entitlements"; sourceTree = "<group>"; };
-		FF97FC4A14FA981900CBCFF1 /* CLStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CLStoryboard.storyboard; sourceTree = "<group>"; };
+		FF9705C214FA89C80083413C /* cloudy-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "cloudy-iOS.entitlements"; sourceTree = SOURCE_ROOT; };
+		FF97FC4A14FA981900CBCFF1 /* CLStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CLStoryboard.storyboard; path = cloudy/CLStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +84,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF7AF10D1520E38200B04AAB /* MobileCoreServices.framework in Frameworks */,
+				FF7AF1061520E37600B04AAB /* AudioToolbox.framework in Frameworks */,
+				FF7AF1071520E37600B04AAB /* CFNetwork.framework in Frameworks */,
+				FF7AF1081520E37600B04AAB /* libz.dylib in Frameworks */,
+				FF7AF1091520E37600B04AAB /* QuartzCore.framework in Frameworks */,
+				FF7AF10A1520E37600B04AAB /* Security.framework in Frameworks */,
+				FF7AF10B1520E37600B04AAB /* SystemConfiguration.framework in Frameworks */,
+				FF97058D14FA88B60083413C /* CoreGraphics.framework in Frameworks */,
 				FF97058914FA88B60083413C /* UIKit.framework in Frameworks */,
 				FF97058B14FA88B60083413C /* Foundation.framework in Frameworks */,
-				FF97058D14FA88B60083413C /* CoreGraphics.framework in Frameworks */,
 				FF97058F14FA88B60083413C /* CoreData.framework in Frameworks */,
+				FF7AF0FE1520E32900B04AAB /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,8 +116,15 @@
 		FF97057914FA88B60083413C = {
 			isa = PBXGroup;
 			children = (
-				FF9705C214FA89C80083413C /* cloudy-iOS.entitlements */,
-				FF97059014FA88B60083413C /* Scaffold */,
+				FF167A8F14FAA0D700C9DA0B /* CLDefines.h */,
+				FF167A9014FAA11200C9DA0B /* CLDefines.m */,
+				FF97059914FA88B60083413C /* CLAppDelegate.h */,
+				FF97059A14FA88B60083413C /* CLAppDelegate.m */,
+				FF167A8C14FA9B5B00C9DA0B /* CLItemsViewController.h */,
+				FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */,
+				FF97FC4A14FA981900CBCFF1 /* CLStoryboard.storyboard */,
+				FF6C27B91520E9FB0000371A /* CLModel.xcdatamodeld */,
+				FF97059114FA88B60083413C /* Supporting Files */,
 				FF9705AC14FA88B70083413C /* cloudyTests */,
 				FF97058714FA88B60083413C /* Frameworks */,
 				FF97058514FA88B60083413C /* Products */,
@@ -113,41 +143,34 @@
 		FF97058714FA88B60083413C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FF97058814FA88B60083413C /* UIKit.framework */,
-				FF97058A14FA88B60083413C /* Foundation.framework */,
-				FF97058C14FA88B60083413C /* CoreGraphics.framework */,
+				FF7AF1021520E37600B04AAB /* libz.dylib */,
+				FF7AF1001520E37600B04AAB /* AudioToolbox.framework */,
+				FF7AF1011520E37600B04AAB /* CFNetwork.framework */,
 				FF97058E14FA88B60083413C /* CoreData.framework */,
+				FF97058C14FA88B60083413C /* CoreGraphics.framework */,
+				FF97058A14FA88B60083413C /* Foundation.framework */,
+				FF7AF10C1520E38200B04AAB /* MobileCoreServices.framework */,
+				FF7AF0FD1520E32900B04AAB /* Parse.framework */,
+				FF7AF1031520E37600B04AAB /* QuartzCore.framework */,
+				FF7AF1041520E37600B04AAB /* Security.framework */,
 				FF9705A514FA88B70083413C /* SenTestingKit.framework */,
+				FF7AF1051520E37600B04AAB /* SystemConfiguration.framework */,
+				FF97058814FA88B60083413C /* UIKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FF97059014FA88B60083413C /* Scaffold */ = {
-			isa = PBXGroup;
-			children = (
-				FF167A8F14FAA0D700C9DA0B /* CLDefines.h */,
-				FF167A9014FAA11200C9DA0B /* CLDefines.m */,
-				FF97059914FA88B60083413C /* CLAppDelegate.h */,
-				FF97059A14FA88B60083413C /* CLAppDelegate.m */,
-				FF97FC4A14FA981900CBCFF1 /* CLStoryboard.storyboard */,
-				FF167A8C14FA9B5B00C9DA0B /* CLItemsViewController.h */,
-				FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */,
-				FF97059C14FA88B60083413C /* cloudy.xcdatamodeld */,
-				FF97059114FA88B60083413C /* Supporting Files */,
-			);
-			name = Scaffold;
-			path = cloudy;
 			sourceTree = "<group>";
 		};
 		FF97059114FA88B60083413C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FF97059214FA88B60083413C /* cloudy-Info.plist */,
-				FF97059314FA88B60083413C /* InfoPlist.strings */,
+				FF9705C214FA89C80083413C /* cloudy-iOS.entitlements */,
 				FF97059614FA88B60083413C /* main.m */,
 				FF97059814FA88B60083413C /* cloudy-Prefix.pch */,
+				FF97059214FA88B60083413C /* cloudy-Info.plist */,
+				FF97059314FA88B60083413C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			path = cloudy;
 			sourceTree = "<group>";
 		};
 		FF9705AC14FA88B70083413C /* cloudyTests */ = {
@@ -277,9 +300,9 @@
 			files = (
 				FF97059714FA88B60083413C /* main.m in Sources */,
 				FF97059B14FA88B60083413C /* CLAppDelegate.m in Sources */,
-				FF97059E14FA88B60083413C /* cloudy.xcdatamodeld in Sources */,
 				FF167A8E14FA9B5B00C9DA0B /* CLItemsViewController.m in Sources */,
 				FF167A9114FAA11200C9DA0B /* CLDefines.m in Sources */,
+				FF6C27BB1520E9FB0000371A /* CLModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +393,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "cloudy-iOS.entitlements";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/externals/ParseSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cloudy/cloudy-Prefix.pch";
 				INFOPLIST_FILE = "cloudy/cloudy-Info.plist";
@@ -382,6 +409,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "cloudy-iOS.entitlements";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/externals/ParseSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cloudy/cloudy-Prefix.pch";
 				INFOPLIST_FILE = "cloudy/cloudy-Info.plist";
@@ -457,14 +488,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FF97059C14FA88B60083413C /* cloudy.xcdatamodeld */ = {
+		FF6C27B91520E9FB0000371A /* CLModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FF167A8B14FA9A9D00C9DA0B /* cloudy 1.xcdatamodel */,
-				FF97059D14FA88B60083413C /* cloudy.xcdatamodel */,
+				FF6C27BA1520E9FB0000371A /* CLModel.xcdatamodel */,
 			);
-			currentVersion = FF167A8B14FA9A9D00C9DA0B /* cloudy 1.xcdatamodel */;
-			path = cloudy.xcdatamodeld;
+			currentVersion = FF6C27BA1520E9FB0000371A /* CLModel.xcdatamodel */;
+			name = CLModel.xcdatamodeld;
+			path = cloudy/CLModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
