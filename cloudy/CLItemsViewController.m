@@ -23,6 +23,14 @@
 	
 	self.title = NSLocalizedString(@"ITEMS_VIEW_CONTROLLER_TITLE", @"Items View Controller Title");
 	
+	NSURL *ubiquityContainerURL = [[NSFileManager defaultManager] URLForUbiquityContainerIdentifier:kCLUbiquityContainerIdentifier];
+	
+	if (!ubiquityContainerURL) {
+	
+		//[[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:<#(NSString *)#> otherButtonTitles:<#(NSString *), ...#>, nil]
+	
+	}
+	
 }
 
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

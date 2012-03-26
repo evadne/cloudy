@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FF167A8E14FA9B5B00C9DA0B /* CLItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */; };
+		FF167A9114FAA11200C9DA0B /* CLDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = FF167A9014FAA11200C9DA0B /* CLDefines.m */; };
 		FF97058914FA88B60083413C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058814FA88B60083413C /* UIKit.framework */; };
 		FF97058B14FA88B60083413C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058A14FA88B60083413C /* Foundation.framework */; };
 		FF97058D14FA88B60083413C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058C14FA88B60083413C /* CoreGraphics.framework */; };
@@ -39,6 +40,8 @@
 		FF167A8B14FA9A9D00C9DA0B /* cloudy 1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "cloudy 1.xcdatamodel"; sourceTree = "<group>"; };
 		FF167A8C14FA9B5B00C9DA0B /* CLItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLItemsViewController.h; sourceTree = "<group>"; };
 		FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLItemsViewController.m; sourceTree = "<group>"; };
+		FF167A8F14FAA0D700C9DA0B /* CLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDefines.h; sourceTree = "<group>"; };
+		FF167A9014FAA11200C9DA0B /* CLDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDefines.m; sourceTree = "<group>"; };
 		FF97058414FA88B60083413C /* cloudy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cloudy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF97058814FA88B60083413C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FF97058A14FA88B60083413C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -122,6 +125,8 @@
 		FF97059014FA88B60083413C /* Scaffold */ = {
 			isa = PBXGroup;
 			children = (
+				FF167A8F14FAA0D700C9DA0B /* CLDefines.h */,
+				FF167A9014FAA11200C9DA0B /* CLDefines.m */,
 				FF97059914FA88B60083413C /* CLAppDelegate.h */,
 				FF97059A14FA88B60083413C /* CLAppDelegate.m */,
 				FF97FC4A14FA981900CBCFF1 /* CLStoryboard.storyboard */,
@@ -274,6 +279,7 @@
 				FF97059B14FA88B60083413C /* CLAppDelegate.m in Sources */,
 				FF97059E14FA88B60083413C /* cloudy.xcdatamodeld in Sources */,
 				FF167A8E14FA9B5B00C9DA0B /* CLItemsViewController.m in Sources */,
+				FF167A9114FAA11200C9DA0B /* CLDefines.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
