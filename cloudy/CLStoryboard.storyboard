@@ -25,6 +25,57 @@
             </objects>
             <point key="canvasLocation" x="-19" y="-129"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="V49-WR-eJ9">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXW-qd-Vjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="onboardingNavController" definesPresentationContext="YES" id="6a8-UC-0dx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Atz-Eq-KJa">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="W3k-Cw-YaK" kind="relationship" relationship="rootViewController" id="XeV-rE-ugR"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-19" y="541"/>
+        </scene>
+        <!--Onboarding View Controller - Welcome-->
+        <scene sceneID="YJO-r2-CsZ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jb3-ib-JhI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="W3k-Cw-YaK" customClass="CLOnboardingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rwE-u4-JlT">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="PfD-4G-Ed2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                                <connections>
+                                    <outlet property="delegate" destination="W3k-Cw-YaK" id="TCP-qS-8i6"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="lrY-4R-wAU">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="aRV-1T-wiD">
+                            <connections>
+                                <action selector="handleDone:" destination="W3k-Cw-YaK" id="Nln-1w-j0g"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="doneItem" destination="aRV-1T-wiD" id="j46-DS-18l"/>
+                        <outlet property="webView" destination="PfD-4G-Ed2" id="auT-Mg-Kxc"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="450" y="541"/>
+        </scene>
         <!--Items View Controller-->
         <scene sceneID="ydF-rs-XDZ">
             <objects>
@@ -82,6 +133,14 @@
                 <relationship kind="outlet" name="actionBarButtonItem" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="addBarButtonItem" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="refreshBarButtonItem" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="CLOnboardingViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CLOnboardingViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="handleDone:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="doneItem" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
             </relationships>
         </class>
     </classes>

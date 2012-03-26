@@ -10,6 +10,7 @@
 		FF167A8E14FA9B5B00C9DA0B /* CLItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */; };
 		FF167A9114FAA11200C9DA0B /* CLDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = FF167A9014FAA11200C9DA0B /* CLDefines.m */; };
 		FF6C27BB1520E9FB0000371A /* CLModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF6C27B91520E9FB0000371A /* CLModel.xcdatamodeld */; };
+		FF6C27C41520F2FB0000371A /* CLOnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6C27C21520F2FB0000371A /* CLOnboardingViewController.m */; };
 		FF7AF0FE1520E32900B04AAB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7AF0FD1520E32900B04AAB /* Parse.framework */; };
 		FF7AF1061520E37600B04AAB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7AF1001520E37600B04AAB /* AudioToolbox.framework */; };
 		FF7AF1071520E37600B04AAB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7AF1011520E37600B04AAB /* CFNetwork.framework */; };
@@ -50,6 +51,8 @@
 		FF167A8F14FAA0D700C9DA0B /* CLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLDefines.h; path = cloudy/CLDefines.h; sourceTree = "<group>"; };
 		FF167A9014FAA11200C9DA0B /* CLDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLDefines.m; path = cloudy/CLDefines.m; sourceTree = "<group>"; };
 		FF6C27BA1520E9FB0000371A /* CLModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CLModel.xcdatamodel; sourceTree = "<group>"; };
+		FF6C27C11520F2FB0000371A /* CLOnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLOnboardingViewController.h; path = cloudy/CLOnboardingViewController.h; sourceTree = "<group>"; };
+		FF6C27C21520F2FB0000371A /* CLOnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLOnboardingViewController.m; path = cloudy/CLOnboardingViewController.m; sourceTree = "<group>"; };
 		FF7AF0FD1520E32900B04AAB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = externals/ParseSDK/Parse.framework; sourceTree = "<group>"; };
 		FF7AF1001520E37600B04AAB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FF7AF1011520E37600B04AAB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -120,6 +123,8 @@
 				FF167A9014FAA11200C9DA0B /* CLDefines.m */,
 				FF97059914FA88B60083413C /* CLAppDelegate.h */,
 				FF97059A14FA88B60083413C /* CLAppDelegate.m */,
+				FF6C27C11520F2FB0000371A /* CLOnboardingViewController.h */,
+				FF6C27C21520F2FB0000371A /* CLOnboardingViewController.m */,
 				FF167A8C14FA9B5B00C9DA0B /* CLItemsViewController.h */,
 				FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */,
 				FF97FC4A14FA981900CBCFF1 /* CLStoryboard.storyboard */,
@@ -303,6 +308,7 @@
 				FF167A8E14FA9B5B00C9DA0B /* CLItemsViewController.m in Sources */,
 				FF167A9114FAA11200C9DA0B /* CLDefines.m in Sources */,
 				FF6C27BB1520E9FB0000371A /* CLModel.xcdatamodeld in Sources */,
+				FF6C27C41520F2FB0000371A /* CLOnboardingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

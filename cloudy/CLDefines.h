@@ -7,3 +7,6 @@
 //
 
 extern NSString * const kCLUbiquityContainerIdentifier;
+
+extern NSString * const kParseFrameworkAppID;
+extern NSString * const kParseFrameworkClientKey;

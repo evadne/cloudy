@@ -9,3 +9,5 @@
 #import "CLDefines.h"
 
 NSString * const kCLUbiquityContainerIdentifier = @"UXVBSX2R8C.com.iridia.cloudy";
+NSString * const kParseFrameworkAppID = @"aOcVK8sIpI6I2WksHgGaVluNyxf5pW4bsoHjdu7F";
+NSString * const kParseFrameworkClientKey = @"CPTCmulUA8SaWeQoQc7ADoHBan1IN3HJnj9Kfey1";

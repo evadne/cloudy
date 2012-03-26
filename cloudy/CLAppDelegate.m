@@ -9,6 +9,7 @@
 #import <Parse/Parse.h>
 
 #import "CLAppDelegate.h"
+#import "CLOnboardingViewController.h"
 
 @implementation CLAppDelegate
 @synthesize window;
@@ -17,15 +18,25 @@
 
 	[application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound];
 	
-	[Parse setApplicationId:@"aOcVK8sIpI6I2WksHgGaVluNyxf5pW4bsoHjdu7F" clientKey:@"CPTCmulUA8SaWeQoQc7ADoHBan1IN3HJnj9Kfey1"];
+	[Parse setApplicationId:kParseFrameworkAppID clientKey:kParseFrameworkClientKey];
 	
 	if (!self.window)
 		self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+		
+	UIStoryboard *sb = [UIStoryboard storyboardWithName:@"CLStoryboard" bundle:nil];
 	
 	self.window.backgroundColor = [UIColor blackColor];
-	self.window.rootViewController = [[UIStoryboard storyboardWithName:@"CLStoryboard" bundle:nil] instantiateInitialViewController];
+	self.window.rootViewController = [sb instantiateInitialViewController];
 	
 	[self.window makeKeyAndVisible];
+	
+	if ([CLOnboardingViewController needsOnboarding]) {
+	
+		UIViewController *onboardingNC = [sb instantiateViewControllerWithIdentifier:@"onboardingNavController"];
+		
+		[self.window.rootViewController presentViewController:onboardingNC animated:NO completion:nil];
+		
+	}
 	
 	return YES;
 	

@@ -1,13 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1415" systemVersion="12A128p" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="CLItem" syncable="YES">
-        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="children" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CLItem" inverseName="parent" inverseEntity="CLItem" syncable="YES"/>
-        <relationship name="parent" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CLItem" inverseName="children" inverseEntity="CLItem" syncable="YES"/>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1416" systemVersion="12A154q" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CLItem" isAbstract="YES" syncable="YES">
+        <attribute name="blob" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="bodyText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" indexed="YES" spotlightIndexingEnabled="YES" syncable="YES"/>
+        <attribute name="updateDate" optional="YES" attributeType="Date" syncable="YES"/>
     </entity>
+    <entity name="CLMediaItem" parentEntity="CLItem" syncable="YES">
+        <attribute name="albumArtistName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="albumName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="artistName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="artwork" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="beatsPerMinute" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="composerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="discNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="episodeID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="episodeNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="genreName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mediaName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberOfDiscsInAlbum" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="numerOfTracksInAlbum" optional="YES" attributeType="Integer 64" minValueString="0" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="partOfCompilation" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="seasonNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="showName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortAlbumArtistName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortAlbumName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortArtistName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortComposerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortShowName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trackNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="videoDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="xid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="CLTextItem" parentEntity="CLItem" syncable="YES"/>
     <elements>
-        <element name="CLItem" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="CLItem" positionX="-360" positionY="-1290" width="128" height="120"/>
+        <element name="CLTextItem" positionX="-198" positionY="-1284" width="128" height="45"/>
+        <element name="CLMediaItem" positionX="-200" positionY="-1224" width="128" height="435"/>
     </elements>
 </model>
