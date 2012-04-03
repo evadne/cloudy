@@ -7,14 +7,22 @@
 //
 
 #import "CLAppDelegate_OSX.h"
+#import "CLStatusItem.h"
+#import <IRFoundationsX/IRFoundationsX.h>
+
+
+@interface CLAppDelegate_OSX ()
+
+@property (strong, readwrite) NSStatusItem *statusItem;
+
+@end
 
 @implementation CLAppDelegate_OSX
 
-@synthesize window = _window;
+- (void) applicationDidFinishLaunching:(NSNotification *)aNotification {
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-	// Insert code here to initialize your application
+	self.statusItem = [CLStatusItem sharedItem];
+		
 }
 
 @end

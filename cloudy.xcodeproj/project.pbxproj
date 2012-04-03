@@ -57,6 +57,9 @@
 		FFF85737152B7AEC001B3E92 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF85734152B7AEC001B3E92 /* MainMenu.xib */; };
 		FFF85739152B7BC9001B3E92 /* CLModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF6C27B91520E9FB0000371A /* CLModel.xcdatamodeld */; };
 		FFF85749152B7E3C001B3E92 /* IRFoundationsX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF85746152B7E26001B3E92 /* IRFoundationsX.framework */; };
+		FFF85766152B8244001B3E92 /* CLStatusItemMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF85765152B8244001B3E92 /* CLStatusItemMenu.xib */; };
+		FFF85771152B849A001B3E92 /* CLStatusItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF85770152B849A001B3E92 /* CLStatusItem.m */; };
+		FFF857CF152B86BE001B3E92 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF857CE152B86BD001B3E92 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +158,10 @@
 		FFF85733152B7AEC001B3E92 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = Credits.rtf; path = cloudy/Credits.rtf; sourceTree = "<group>"; };
 		FFF85734152B7AEC001B3E92 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = cloudy/MainMenu.xib; sourceTree = "<group>"; };
 		FFF8573A152B7E25001B3E92 /* IRFoundations.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IRFoundations.xcodeproj; path = externals/IRFoundations/IRFoundations/IRFoundations.xcodeproj; sourceTree = "<group>"; };
+		FFF85765152B8244001B3E92 /* CLStatusItemMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CLStatusItemMenu.xib; path = cloudy/CLStatusItemMenu.xib; sourceTree = "<group>"; };
+		FFF8576F152B849A001B3E92 /* CLStatusItem.h */ = {isa = PBXFileReference; fileEncoding = 4; name = CLStatusItem.h; path = cloudy/CLStatusItem.h; sourceTree = "<group>"; };
+		FFF85770152B849A001B3E92 /* CLStatusItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLStatusItem.m; path = cloudy/CLStatusItem.m; sourceTree = "<group>"; };
+		FFF857CE152B86BD001B3E92 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libxml2.dylib; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF85726152B7896001B3E92 /* crt1.o in Frameworks */,
+				FFF857CF152B86BE001B3E92 /* libxml2.dylib in Frameworks */,
 				FFF85722152B77E5001B3E92 /* Cocoa.framework in Frameworks */,
 				FFF85749152B7E3C001B3E92 /* IRFoundationsX.framework in Frameworks */,
 			);
@@ -225,6 +233,8 @@
 				FF6C27C21520F2FB0000371A /* CLOnboardingViewController.m */,
 				FF167A8C14FA9B5B00C9DA0B /* CLItemsViewController.h */,
 				FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */,
+				FFF8576F152B849A001B3E92 /* CLStatusItem.h */,
+				FFF85770152B849A001B3E92 /* CLStatusItem.m */,
 				FF97FC4A14FA981900CBCFF1 /* CLStoryboard.storyboard */,
 				FF6C27B91520E9FB0000371A /* CLModel.xcdatamodeld */,
 				FFF85738152B7B34001B3E92 /* Resources */,
@@ -284,8 +294,9 @@
 		FFF85697152B7372001B3E92 /* OSX Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FFF85721152B77E5001B3E92 /* Cocoa.framework */,
 				FFF85725152B7896001B3E92 /* crt1.o */,
+				FFF857CE152B86BD001B3E92 /* libxml2.dylib */,
+				FFF85721152B77E5001B3E92 /* Cocoa.framework */,
 			);
 			name = "OSX Frameworks";
 			sourceTree = "<group>";
@@ -293,6 +304,7 @@
 		FFF85738152B7B34001B3E92 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FFF85765152B8244001B3E92 /* CLStatusItemMenu.xib */,
 				FFF85733152B7AEC001B3E92 /* Credits.rtf */,
 				FFF85734152B7AEC001B3E92 /* MainMenu.xib */,
 			);
@@ -470,6 +482,7 @@
 				FFF8572E152B7A81001B3E92 /* InfoPlist.strings in Resources */,
 				FFF85736152B7AEC001B3E92 /* Credits.rtf in Resources */,
 				FFF85737152B7AEC001B3E92 /* MainMenu.xib in Resources */,
+				FFF85766152B8244001B3E92 /* CLStatusItemMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +582,7 @@
 				FFF85724152B788C001B3E92 /* CLAppDelegate_OSX.m in Sources */,
 				FFF85729152B7960001B3E92 /* main.m in Sources */,
 				FFF85739152B7BC9001B3E92 /* CLModel.xcdatamodeld in Sources */,
+				FFF85771152B849A001B3E92 /* CLStatusItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,6 +651,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/include/libxml2\"/**",
+					"\"$(PROJECT_DIR)/externals/IRFoundations\"/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				"PROVISIONING_PROFILE[sdk=macosx*]" = "D5CA38BC-39BD-4E36-8515-A677597AD97C";
 				SDKROOT = iphoneos;
@@ -657,6 +675,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/include/libxml2\"/**",
+					"\"$(PROJECT_DIR)/externals/IRFoundations\"/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				"PROVISIONING_PROFILE[sdk=macosx*]" = "D5CA38BC-39BD-4E36-8515-A677597AD97C";
