@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		FFF8574E152B7EB5001B3E92 /* Chameleon */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FFF8574F152B7EB5001B3E92 /* Build configuration list for PBXAggregateTarget "Chameleon" */;
+			buildPhases = (
+				FFF85752152B7EB8001B3E92 /* Run Script: Build Chameleon Frameworks */,
+			);
+			dependencies = (
+			);
+			name = Chameleon;
+			productName = Chameleon;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		FF167A8E14FA9B5B00C9DA0B /* CLItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */; };
 		FF167A9114FAA11200C9DA0B /* CLDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = FF167A9014FAA11200C9DA0B /* CLDefines.m */; };
@@ -42,6 +56,7 @@
 		FFF85736152B7AEC001B3E92 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FFF85733152B7AEC001B3E92 /* Credits.rtf */; };
 		FFF85737152B7AEC001B3E92 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF85734152B7AEC001B3E92 /* MainMenu.xib */; };
 		FFF85739152B7BC9001B3E92 /* CLModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF6C27B91520E9FB0000371A /* CLModel.xcdatamodeld */; };
+		FFF85749152B7E3C001B3E92 /* IRFoundationsX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF85746152B7E26001B3E92 /* IRFoundationsX.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +73,41 @@
 			proxyType = 1;
 			remoteGlobalIDString = FFF85692152B7372001B3E92;
 			remoteInfo = "cloudy-OSX";
+		};
+		FFF85743152B7E26001B3E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF8573A152B7E25001B3E92 /* IRFoundations.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFD6F972150AFF76007173EA;
+			remoteInfo = IRFoundationsTouch;
+		};
+		FFF85745152B7E26001B3E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF8573A152B7E25001B3E92 /* IRFoundations.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFD6F973150AFF76007173EA;
+			remoteInfo = IRFoundationsX;
+		};
+		FFF85747152B7E26001B3E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF8573A152B7E25001B3E92 /* IRFoundations.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFD6F974150AFF76007173EA;
+			remoteInfo = IRFoundationsTest;
+		};
+		FFF85753152B7ECE001B3E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF97057B14FA88B60083413C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFF8574E152B7EB5001B3E92;
+			remoteInfo = Chameleon;
+		};
+		FFF85755152B7F7E001B3E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF8573A152B7E25001B3E92 /* IRFoundations.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FF72C1F014278ABF00B5D838;
+			remoteInfo = IRFoundationsX;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -104,6 +154,7 @@
 		FFF85732152B7AEC001B3E92 /* cloudy-OSX-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "cloudy-OSX-Prefix.pch"; sourceTree = "<group>"; };
 		FFF85733152B7AEC001B3E92 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = Credits.rtf; path = cloudy/Credits.rtf; sourceTree = "<group>"; };
 		FFF85734152B7AEC001B3E92 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = cloudy/MainMenu.xib; sourceTree = "<group>"; };
+		FFF8573A152B7E25001B3E92 /* IRFoundations.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IRFoundations.xcodeproj; path = externals/IRFoundations/IRFoundations/IRFoundations.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +194,7 @@
 			files = (
 				FFF85726152B7896001B3E92 /* crt1.o in Frameworks */,
 				FFF85722152B77E5001B3E92 /* Cocoa.framework in Frameworks */,
+				FFF85749152B7E3C001B3E92 /* IRFoundationsX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +230,7 @@
 				FFF85738152B7B34001B3E92 /* Resources */,
 				FF97058714FA88B60083413C /* iOS Frameworks */,
 				FFF85697152B7372001B3E92 /* OSX Frameworks */,
+				FFF8573A152B7E25001B3E92 /* IRFoundations.xcodeproj */,
 				FF97058514FA88B60083413C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -246,6 +299,16 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		FFF8573B152B7E25001B3E92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFF85744152B7E26001B3E92 /* libIRFoundationsTouch.a */,
+				FFF85746152B7E26001B3E92 /* IRFoundationsX.framework */,
+				FFF85748152B7E26001B3E92 /* IRFoundationsTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -292,10 +355,13 @@
 				FFF8568F152B7372001B3E92 /* Sources */,
 				FFF85690152B7372001B3E92 /* Frameworks */,
 				FFF85691152B7372001B3E92 /* Resources */,
+				FFF85757152B805B001B3E92 /* Run Script: Copy Private Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FFF85754152B7ECE001B3E92 /* PBXTargetDependency */,
+				FFF85756152B7F7E001B3E92 /* PBXTargetDependency */,
 			);
 			name = "cloudy-OSX";
 			productName = "cloudy-OSX";
@@ -339,15 +405,46 @@
 			mainGroup = FF97057914FA88B60083413C;
 			productRefGroup = FF97058514FA88B60083413C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FFF8573B152B7E25001B3E92 /* Products */;
+					ProjectRef = FFF8573A152B7E25001B3E92 /* IRFoundations.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FF97058314FA88B60083413C /* cloudy-iOS */,
 				FF9705A314FA88B70083413C /* cloudy-iOS-Tests */,
 				FFF85692152B7372001B3E92 /* cloudy-OSX */,
 				FFF856B1152B7373001B3E92 /* cloudy-OSX-Tests */,
+				FFF8574E152B7EB5001B3E92 /* Chameleon */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FFF85744152B7E26001B3E92 /* libIRFoundationsTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIRFoundationsTouch.a;
+			remoteRef = FFF85743152B7E26001B3E92 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF85746152B7E26001B3E92 /* IRFoundationsX.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IRFoundationsX.framework;
+			remoteRef = FFF85745152B7E26001B3E92 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF85748152B7E26001B3E92 /* IRFoundationsTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IRFoundationsTest.octest;
+			remoteRef = FFF85747152B7E26001B3E92 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FF97058214FA88B60083413C /* Resources */ = {
@@ -412,6 +509,34 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		FFF85752152B7EB8001B3E92 /* Run Script: Build Chameleon Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: Build Chameleon Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$PROJECT_DIR/externals/Chameleon/UIKit\"\n\nxcodebuild -alltargets -sdk macosx OBJROOT=\"$OBJROOT\" SYMROOT=\"$SYMROOT\" -configuration \"$CONFIGURATION\" CODE_SIGN_IDENTITY=\"Mac Developer: Evadne Wu (3JKY47N3VU)\"";
+		};
+		FFF85757152B805B001B3E92 /* Run Script: Copy Private Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: Copy Private Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FRAMEWORKS=\"UIKit.framework\"\n\nPRIVATE_FRAMEWORKS_PATH=${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\n\nrm -rf \"${PRIVATE_FRAMEWORKS_PATH}\"    \nmkdir -p ${PRIVATE_FRAMEWORKS_PATH}\n\nfor fwk in ${FRAMEWORKS}\ndo\n    FRAMEWORK_NAME=${BUILT_PRODUCTS_DIR}/${fwk}\n    cp -vfRH \"${FRAMEWORK_NAME}\" \"${PRIVATE_FRAMEWORKS_PATH}\"\ndone\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -466,6 +591,16 @@
 			isa = PBXTargetDependency;
 			target = FFF85692152B7372001B3E92 /* cloudy-OSX */;
 			targetProxy = FFF856B5152B7373001B3E92 /* PBXContainerItemProxy */;
+		};
+		FFF85754152B7ECE001B3E92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFF8574E152B7EB5001B3E92 /* Chameleon */;
+			targetProxy = FFF85753152B7ECE001B3E92 /* PBXContainerItemProxy */;
+		};
+		FFF85756152B7F7E001B3E92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IRFoundationsX;
+			targetProxy = FFF85755152B7F7E001B3E92 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -682,6 +817,24 @@
 			};
 			name = Release;
 		};
+		FFF85750152B7EB5001B3E92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FFF85751152B7EB5001B3E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -725,6 +878,14 @@
 			buildConfigurations = (
 				FFF856C4152B7373001B3E92 /* Debug */,
 				FFF856C5152B7373001B3E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FFF8574F152B7EB5001B3E92 /* Build configuration list for PBXAggregateTarget "Chameleon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF85750152B7EB5001B3E92 /* Debug */,
+				FFF85751152B7EB5001B3E92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

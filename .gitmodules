@@ -4,3 +4,6 @@
 [submodule "externals/IRFoundations"]
 	path = externals/IRFoundations
 	url = git://github.com/iridia/IRFoundations.git
+[submodule "externals/Chameleon"]
+	path = externals/Chameleon
+	url = git://github.com/iridia/Chameleon.git

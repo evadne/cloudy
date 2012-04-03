@@ -2,7 +2,7 @@
 <Scheme
    version = "1.3">
    <BuildAction
-      parallelizeBuildables = "YES"
+      parallelizeBuildables = "NO"
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
@@ -32,7 +32,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FFF856B1152B7373001B3E92"
-               BuildableName = "cloudy-OSXTests.octest"
+               BuildableName = "cloudy-OSX-Tests.octest"
                BlueprintName = "cloudy-OSX-Tests"
                ReferencedContainer = "container:cloudy.xcodeproj">
             </BuildableReference>
