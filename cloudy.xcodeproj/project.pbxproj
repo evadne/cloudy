@@ -94,7 +94,7 @@
 		FFF85693152B7372001B3E92 /* cloudy-OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cloudy-OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF856A7152B7372001B3E92 /* CLAppDelegate_OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CLAppDelegate_OSX.h; path = cloudy/CLAppDelegate_OSX.h; sourceTree = "<group>"; };
 		FFF856A8152B7372001B3E92 /* CLAppDelegate_OSX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CLAppDelegate_OSX.m; path = cloudy/CLAppDelegate_OSX.m; sourceTree = "<group>"; };
-		FFF856B2152B7373001B3E92 /* cloudy-OSXTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cloudy-OSXTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF856B2152B7373001B3E92 /* cloudy-OSX-Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cloudy-OSX-Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF8571C152B7665001B3E92 /* CLAppDelegate_iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLAppDelegate_iOS.h; path = cloudy/CLAppDelegate_iOS.h; sourceTree = "<group>"; };
 		FFF8571D152B7665001B3E92 /* CLAppDelegate_iOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLAppDelegate_iOS.m; path = cloudy/CLAppDelegate_iOS.m; sourceTree = "<group>"; };
 		FFF85721152B77E5001B3E92 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
@@ -188,7 +188,7 @@
 				FF97058414FA88B60083413C /* cloudy-iOS.app */,
 				FF9705A414FA88B70083413C /* cloudyTests.octest */,
 				FFF85693152B7372001B3E92 /* cloudy-OSX.app */,
-				FFF856B2152B7373001B3E92 /* cloudy-OSXTests.octest */,
+				FFF856B2152B7373001B3E92 /* cloudy-OSX-Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -318,7 +318,7 @@
 			);
 			name = "cloudy-OSX-Tests";
 			productName = "cloudy-OSXTests";
-			productReference = FFF856B2152B7373001B3E92 /* cloudy-OSXTests.octest */;
+			productReference = FFF856B2152B7373001B3E92 /* cloudy-OSX-Tests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
