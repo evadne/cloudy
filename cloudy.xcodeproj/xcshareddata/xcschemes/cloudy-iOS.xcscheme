@@ -33,7 +33,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FF9705A314FA88B70083413C"
                BuildableName = "cloudy-iOS-tests.octest"
-               BlueprintName = "cloudy-iOS-tests"
+               BlueprintName = "cloudy-iOS-Tests"
                ReferencedContainer = "container:cloudy.xcodeproj">
             </BuildableReference>
          </TestableReference>

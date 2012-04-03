@@ -6,75 +6,42 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import <Parse/Parse.h>
-
 #import "CLAppDelegate.h"
-#import "CLOnboardingViewController.h"
+
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
+	#import "CLAppDelegate_iOS.h"
+#else
+	#import "CLAppDelegate_OSX.h"
+#endif
+
 
 @implementation CLAppDelegate
-@synthesize window;
 
-- (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
++ (id) alloc {
 
-	[application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound];
-	
-	[Parse setApplicationId:kParseFrameworkAppID clientKey:kParseFrameworkClientKey];
-	
-	if (!self.window)
-		self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-		
-	UIStoryboard *sb = [UIStoryboard storyboardWithName:@"CLStoryboard" bundle:nil];
-	
-	self.window.backgroundColor = [UIColor blackColor];
-	self.window.rootViewController = [sb instantiateInitialViewController];
-	
-	[self.window makeKeyAndVisible];
-	
-	if ([CLOnboardingViewController needsOnboarding]) {
-
-		UINavigationController *onboardingNC = [sb instantiateViewControllerWithIdentifier:@"onboardingNavController"];
-		
-		__weak CLOnboardingViewController *wOnboardingVC = (CLOnboardingViewController *)onboardingNC.topViewController;
-		NSParameterAssert([wOnboardingVC isKindOfClass:[CLOnboardingViewController class]]);
-		
-		wOnboardingVC.onDone = ^ {
-			[wOnboardingVC dismissViewControllerAnimated:YES completion:nil];
-		};
-		
-		[self.window.rootViewController presentViewController:onboardingNC animated:NO completion:nil];
-		
-	}
-	
-	return YES;
-	
+  if ([self isEqual:[CLAppDelegate class]])
+    return [[self preferredClusterClass] alloc];
+  
+  return [super alloc];
+  
 }
 
-- (void) application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)newDeviceToken {
++ (id) allocWithZone:(NSZone *)zone {
+  
+  if ([self isEqual:[CLAppDelegate class]])
+    return [[self preferredClusterClass] allocWithZone:zone];
 
-	[PFPush storeDeviceToken:newDeviceToken];
-	[PFPush subscribeToChannelInBackground:@"" block: ^ (BOOL succeeded, NSError *error) {
-		
-		if (succeeded) {
-			NSLog(@"Successfully subscribed to the broadcast channel.");
-		} else {
-			NSLog(@"Failed to subscribe to the broadcast channel.");
-		}
-		
-	}];
-
+  return [super allocWithZone:zone];
+  
 }
 
-- (void) application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
++ (Class) preferredClusterClass {
 
-	NSLog(@"%s %@ %@", __PRETTY_FUNCTION__, application, error);
-
-}
-
-- (void) application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-
-	//	Heh
-
-	[PFPush handlePush:userInfo];
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
+  return [CLAppDelegate_iOS class];
+#else
+	return [CLAppDelegate_OSX class];
+#endif
 
 }
 

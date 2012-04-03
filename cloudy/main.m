@@ -8,9 +8,13 @@
 
 #import "CLAppDelegate.h"
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
 	@autoreleasepool {
-	    return UIApplicationMain(argc, argv, nil, NSStringFromClass([CLAppDelegate class]));
+	#if TARGET_OS_IPHONE
+		return UIApplicationMain(argc, argv, nil, NSStringFromClass([CLAppDelegate class]));
+	#else
+		return NSApplicationMain(argc, (const char **)argv);
+	#endif
 	}
 }
+
