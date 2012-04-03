@@ -104,10 +104,16 @@
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="Xpp-zF-kNv">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="0BF-QW-gza">
-                            <connections>
-                                <action selector="handleAddBarButtonItemTap:" destination="geb-kc-FJU" id="J8u-f4-YCt"/>
-                            </connections>
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" id="egR-t4-rhq">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Rcr-uI-PFh">
+                                <rect key="frame" x="5" y="7" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Grid"/>
+                                    <segment title="List"/>
+                                </segments>
+                            </segmentedControl>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -115,7 +121,6 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="actionBarButtonItem" destination="aVy-sA-aKd" id="VRZ-Cl-cFq"/>
-                        <outlet property="addBarButtonItem" destination="0BF-QW-gza" id="YNX-cH-WgB"/>
                         <outlet property="refreshBarButtonItem" destination="ztj-Qg-Nfk" id="KYE-dR-XOW"/>
                     </connections>
                 </tableViewController>

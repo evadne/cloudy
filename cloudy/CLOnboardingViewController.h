@@ -16,5 +16,6 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *doneItem;
 
 - (IBAction) handleDone:(UIBarButtonItem *)sender;
+@property (strong, nonatomic) void (^onDone)(void);
 
 @end

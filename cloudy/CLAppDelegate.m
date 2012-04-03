@@ -31,8 +31,15 @@
 	[self.window makeKeyAndVisible];
 	
 	if ([CLOnboardingViewController needsOnboarding]) {
-	
-		UIViewController *onboardingNC = [sb instantiateViewControllerWithIdentifier:@"onboardingNavController"];
+
+		UINavigationController *onboardingNC = [sb instantiateViewControllerWithIdentifier:@"onboardingNavController"];
+		
+		__weak CLOnboardingViewController *wOnboardingVC = (CLOnboardingViewController *)onboardingNC.topViewController;
+		NSParameterAssert([wOnboardingVC isKindOfClass:[CLOnboardingViewController class]]);
+		
+		wOnboardingVC.onDone = ^ {
+			[wOnboardingVC dismissViewControllerAnimated:YES completion:nil];
+		};
 		
 		[self.window.rootViewController presentViewController:onboardingNC animated:NO completion:nil];
 		

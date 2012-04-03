@@ -19,11 +19,11 @@
 		FF7AF10A1520E37600B04AAB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7AF1041520E37600B04AAB /* Security.framework */; };
 		FF7AF10B1520E37600B04AAB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7AF1051520E37600B04AAB /* SystemConfiguration.framework */; };
 		FF7AF10D1520E38200B04AAB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7AF10C1520E38200B04AAB /* MobileCoreServices.framework */; };
+		FF92FA9C152B6D7F001A7F2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF92FA9E152B6D7F001A7F2C /* InfoPlist.strings */; };
 		FF97058914FA88B60083413C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058814FA88B60083413C /* UIKit.framework */; };
 		FF97058B14FA88B60083413C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058A14FA88B60083413C /* Foundation.framework */; };
 		FF97058D14FA88B60083413C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058C14FA88B60083413C /* CoreGraphics.framework */; };
 		FF97058F14FA88B60083413C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058E14FA88B60083413C /* CoreData.framework */; };
-		FF97059514FA88B60083413C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF97059314FA88B60083413C /* InfoPlist.strings */; };
 		FF97059714FA88B60083413C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97059614FA88B60083413C /* main.m */; };
 		FF97059B14FA88B60083413C /* CLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97059A14FA88B60083413C /* CLAppDelegate.m */; };
 		FF9705A614FA88B70083413C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF9705A514FA88B70083413C /* SenTestingKit.framework */; };
@@ -33,6 +33,16 @@
 		FF9705B114FA88B70083413C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF9705AF14FA88B70083413C /* InfoPlist.strings */; };
 		FF9705B414FA88B70083413C /* cloudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9705B314FA88B70083413C /* cloudyTests.m */; };
 		FF97FC4B14FA981900CBCFF1 /* CLStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF97FC4A14FA981900CBCFF1 /* CLStoryboard.storyboard */; };
+		FFF85696152B7372001B3E92 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF85695152B7372001B3E92 /* Cocoa.framework */; };
+		FFF856A0152B7372001B3E92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFF8569E152B7372001B3E92 /* InfoPlist.strings */; };
+		FFF856A2152B7372001B3E92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF856A1152B7372001B3E92 /* main.m */; };
+		FFF856A6152B7372001B3E92 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FFF856A4152B7372001B3E92 /* Credits.rtf */; };
+		FFF856A9152B7372001B3E92 /* CLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF856A8152B7372001B3E92 /* CLAppDelegate.m */; };
+		FFF856AC152B7372001B3E92 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF856AA152B7372001B3E92 /* MainMenu.xib */; };
+		FFF856B3152B7373001B3E92 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF9705A514FA88B70083413C /* SenTestingKit.framework */; };
+		FFF856B4152B7373001B3E92 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF85695152B7372001B3E92 /* Cocoa.framework */; };
+		FFF856BC152B7373001B3E92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFF856BA152B7373001B3E92 /* InfoPlist.strings */; };
+		FFF856BF152B7373001B3E92 /* cloudy_OSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF856BE152B7373001B3E92 /* cloudy_OSXTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +52,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = FF97058314FA88B60083413C;
 			remoteInfo = cloudy;
+		};
+		FFF856B5152B7373001B3E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF97057B14FA88B60083413C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFF85692152B7372001B3E92;
+			remoteInfo = "cloudy-OSX";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -61,15 +78,14 @@
 		FF7AF1041520E37600B04AAB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FF7AF1051520E37600B04AAB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FF7AF10C1520E38200B04AAB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FF92FA9D152B6D7F001A7F2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FF97058414FA88B60083413C /* cloudy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cloudy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF97058814FA88B60083413C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FF97058A14FA88B60083413C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FF97058C14FA88B60083413C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		FF97058E14FA88B60083413C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		FF97059214FA88B60083413C /* cloudy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cloudy-Info.plist"; sourceTree = "<group>"; };
-		FF97059414FA88B60083413C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FF97059614FA88B60083413C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FF97059814FA88B60083413C /* cloudy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cloudy-Prefix.pch"; sourceTree = "<group>"; };
+		FF97059814FA88B60083413C /* cloudy-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cloudy-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		FF97059914FA88B60083413C /* CLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CLAppDelegate.h; path = cloudy/CLAppDelegate.h; sourceTree = "<group>"; };
 		FF97059A14FA88B60083413C /* CLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CLAppDelegate.m; path = cloudy/CLAppDelegate.m; sourceTree = "<group>"; };
 		FF9705A414FA88B70083413C /* cloudyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = cloudyTests.octest; path = "cloudy-iOS-tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,8 +94,27 @@
 		FF9705B014FA88B70083413C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FF9705B214FA88B70083413C /* cloudyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cloudyTests.h; sourceTree = "<group>"; };
 		FF9705B314FA88B70083413C /* cloudyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cloudyTests.m; sourceTree = "<group>"; };
-		FF9705C214FA89C80083413C /* cloudy-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "cloudy-iOS.entitlements"; sourceTree = SOURCE_ROOT; };
+		FF9705C214FA89C80083413C /* cloudy-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "cloudy-iOS.entitlements"; path = "cloudy/cloudy-iOS.entitlements"; sourceTree = SOURCE_ROOT; };
 		FF97FC4A14FA981900CBCFF1 /* CLStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CLStoryboard.storyboard; path = cloudy/CLStoryboard.storyboard; sourceTree = "<group>"; };
+		FFF8568D152B72C2001B3E92 /* cloudy-iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "cloudy-iOS-Info.plist"; sourceTree = "<group>"; };
+		FFF85693152B7372001B3E92 /* cloudy-OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cloudy-OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF85695152B7372001B3E92 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		FFF85698152B7372001B3E92 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FFF85699152B7372001B3E92 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FFF8569A152B7372001B3E92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FFF8569D152B7372001B3E92 /* cloudy-OSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cloudy-OSX-Info.plist"; sourceTree = "<group>"; };
+		FFF8569F152B7372001B3E92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFF856A1152B7372001B3E92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFF856A3152B7372001B3E92 /* cloudy-OSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cloudy-OSX-Prefix.pch"; sourceTree = "<group>"; };
+		FFF856A5152B7372001B3E92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FFF856A7152B7372001B3E92 /* CLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLAppDelegate.h; sourceTree = "<group>"; };
+		FFF856A8152B7372001B3E92 /* CLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLAppDelegate.m; sourceTree = "<group>"; };
+		FFF856AB152B7372001B3E92 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FFF856B2152B7373001B3E92 /* cloudy-OSXTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cloudy-OSXTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF856B9152B7373001B3E92 /* cloudy-OSXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cloudy-OSXTests-Info.plist"; sourceTree = "<group>"; };
+		FFF856BB152B7373001B3E92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFF856BD152B7373001B3E92 /* cloudy_OSXTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cloudy_OSXTests.h; sourceTree = "<group>"; };
+		FFF856BE152B7373001B3E92 /* cloudy_OSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cloudy_OSXTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +148,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFF85690152B7372001B3E92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF85696152B7372001B3E92 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF856AE152B7373001B3E92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF856B3152B7373001B3E92 /* SenTestingKit.framework in Frameworks */,
+				FFF856B4152B7373001B3E92 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -131,6 +183,8 @@
 				FF6C27B91520E9FB0000371A /* CLModel.xcdatamodeld */,
 				FF97059114FA88B60083413C /* Supporting Files */,
 				FF9705AC14FA88B70083413C /* cloudyTests */,
+				FFF8569B152B7372001B3E92 /* cloudy-OSX */,
+				FFF856B7152B7373001B3E92 /* cloudy-OSXTests */,
 				FF97058714FA88B60083413C /* Frameworks */,
 				FF97058514FA88B60083413C /* Products */,
 			);
@@ -141,6 +195,8 @@
 			children = (
 				FF97058414FA88B60083413C /* cloudy-iOS.app */,
 				FF9705A414FA88B70083413C /* cloudyTests.octest */,
+				FFF85693152B7372001B3E92 /* cloudy-OSX.app */,
+				FFF856B2152B7373001B3E92 /* cloudy-OSXTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +217,8 @@
 				FF9705A514FA88B70083413C /* SenTestingKit.framework */,
 				FF7AF1051520E37600B04AAB /* SystemConfiguration.framework */,
 				FF97058814FA88B60083413C /* UIKit.framework */,
+				FFF85695152B7372001B3E92 /* Cocoa.framework */,
+				FFF85697152B7372001B3E92 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -170,9 +228,9 @@
 			children = (
 				FF9705C214FA89C80083413C /* cloudy-iOS.entitlements */,
 				FF97059614FA88B60083413C /* main.m */,
-				FF97059814FA88B60083413C /* cloudy-Prefix.pch */,
-				FF97059214FA88B60083413C /* cloudy-Info.plist */,
-				FF97059314FA88B60083413C /* InfoPlist.strings */,
+				FFF8568D152B72C2001B3E92 /* cloudy-iOS-Info.plist */,
+				FF97059814FA88B60083413C /* cloudy-iOS-Prefix.pch */,
+				FF92FA9E152B6D7F001A7F2C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			path = cloudy;
@@ -193,6 +251,58 @@
 			children = (
 				FF9705AE14FA88B70083413C /* cloudyTests-Info.plist */,
 				FF9705AF14FA88B70083413C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFF85697152B7372001B3E92 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFF85698152B7372001B3E92 /* AppKit.framework */,
+				FFF85699152B7372001B3E92 /* CoreData.framework */,
+				FFF8569A152B7372001B3E92 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FFF8569B152B7372001B3E92 /* cloudy-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				FFF856A7152B7372001B3E92 /* CLAppDelegate.h */,
+				FFF856A8152B7372001B3E92 /* CLAppDelegate.m */,
+				FFF856AA152B7372001B3E92 /* MainMenu.xib */,
+				FFF8569C152B7372001B3E92 /* Supporting Files */,
+			);
+			path = "cloudy-OSX";
+			sourceTree = "<group>";
+		};
+		FFF8569C152B7372001B3E92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFF8569D152B7372001B3E92 /* cloudy-OSX-Info.plist */,
+				FFF8569E152B7372001B3E92 /* InfoPlist.strings */,
+				FFF856A1152B7372001B3E92 /* main.m */,
+				FFF856A3152B7372001B3E92 /* cloudy-OSX-Prefix.pch */,
+				FFF856A4152B7372001B3E92 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFF856B7152B7373001B3E92 /* cloudy-OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFF856BD152B7373001B3E92 /* cloudy_OSXTests.h */,
+				FFF856BE152B7373001B3E92 /* cloudy_OSXTests.m */,
+				FFF856B8152B7373001B3E92 /* Supporting Files */,
+			);
+			path = "cloudy-OSXTests";
+			sourceTree = "<group>";
+		};
+		FFF856B8152B7373001B3E92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFF856B9152B7373001B3E92 /* cloudy-OSXTests-Info.plist */,
+				FFF856BA152B7373001B3E92 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -236,6 +346,42 @@
 			productReference = FF9705A414FA88B70083413C /* cloudyTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		FFF85692152B7372001B3E92 /* cloudy-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFF856C0152B7373001B3E92 /* Build configuration list for PBXNativeTarget "cloudy-OSX" */;
+			buildPhases = (
+				FFF8568F152B7372001B3E92 /* Sources */,
+				FFF85690152B7372001B3E92 /* Frameworks */,
+				FFF85691152B7372001B3E92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cloudy-OSX";
+			productName = "cloudy-OSX";
+			productReference = FFF85693152B7372001B3E92 /* cloudy-OSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFF856B1152B7373001B3E92 /* cloudy-OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFF856C3152B7373001B3E92 /* Build configuration list for PBXNativeTarget "cloudy-OSXTests" */;
+			buildPhases = (
+				FFF856AD152B7373001B3E92 /* Sources */,
+				FFF856AE152B7373001B3E92 /* Frameworks */,
+				FFF856AF152B7373001B3E92 /* Resources */,
+				FFF856B0152B7373001B3E92 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFF856B6152B7373001B3E92 /* PBXTargetDependency */,
+			);
+			name = "cloudy-OSXTests";
+			productName = "cloudy-OSXTests";
+			productReference = FFF856B2152B7373001B3E92 /* cloudy-OSXTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -258,6 +404,8 @@
 			targets = (
 				FF97058314FA88B60083413C /* cloudy-iOS */,
 				FF9705A314FA88B70083413C /* cloudy-iOS-tests */,
+				FFF85692152B7372001B3E92 /* cloudy-OSX */,
+				FFF856B1152B7373001B3E92 /* cloudy-OSXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -267,8 +415,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF97059514FA88B60083413C /* InfoPlist.strings in Resources */,
 				FF97FC4B14FA981900CBCFF1 /* CLStoryboard.storyboard in Resources */,
+				FF92FA9C152B6D7F001A7F2C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +428,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFF85691152B7372001B3E92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF856A0152B7372001B3E92 /* InfoPlist.strings in Resources */,
+				FFF856A6152B7372001B3E92 /* Credits.rtf in Resources */,
+				FFF856AC152B7372001B3E92 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF856AF152B7373001B3E92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF856BC152B7373001B3E92 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		FF9705A214FA88B70083413C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		FFF856B0152B7373001B3E92 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -320,6 +499,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFF8568F152B7372001B3E92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF856A2152B7372001B3E92 /* main.m in Sources */,
+				FFF856A9152B7372001B3E92 /* CLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF856AD152B7373001B3E92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF856BF152B7373001B3E92 /* cloudy_OSXTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -328,13 +524,18 @@
 			target = FF97058314FA88B60083413C /* cloudy-iOS */;
 			targetProxy = FF9705AA14FA88B70083413C /* PBXContainerItemProxy */;
 		};
+		FFF856B6152B7373001B3E92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFF85692152B7372001B3E92 /* cloudy-OSX */;
+			targetProxy = FFF856B5152B7373001B3E92 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FF97059314FA88B60083413C /* InfoPlist.strings */ = {
+		FF92FA9E152B6D7F001A7F2C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FF97059414FA88B60083413C /* en */,
+				FF92FA9D152B6D7F001A7F2C /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -343,6 +544,38 @@
 			isa = PBXVariantGroup;
 			children = (
 				FF9705B014FA88B70083413C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FFF8569E152B7372001B3E92 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFF8569F152B7372001B3E92 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FFF856A4152B7372001B3E92 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFF856A5152B7372001B3E92 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		FFF856AA152B7372001B3E92 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFF856AB152B7372001B3E92 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		FFF856BA152B7373001B3E92 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFF856BB152B7373001B3E92 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -357,6 +590,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer: Evadne Wu (3JKY47N3VU)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -371,6 +605,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				"PROVISIONING_PROFILE[sdk=macosx*]" = "D5CA38BC-39BD-4E36-8515-A677597AD97C";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -382,6 +617,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer: Evadne Wu (3JKY47N3VU)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -390,6 +626,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=macosx*]" = "D5CA38BC-39BD-4E36-8515-A677597AD97C";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -404,8 +641,8 @@
 					"\"$(SRCROOT)/externals/ParseSDK\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cloudy/cloudy-Prefix.pch";
-				INFOPLIST_FILE = "cloudy/cloudy-Info.plist";
+				GCC_PREFIX_HEADER = "cloudy/cloudy-iOS-Prefix.pch";
+				INFOPLIST_FILE = "cloudy/cloudy-iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -420,8 +657,8 @@
 					"\"$(SRCROOT)/externals/ParseSDK\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cloudy/cloudy-Prefix.pch";
-				INFOPLIST_FILE = "cloudy/cloudy-Info.plist";
+				GCC_PREFIX_HEADER = "cloudy/cloudy-iOS-Prefix.pch";
+				INFOPLIST_FILE = "cloudy/cloudy-iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -461,6 +698,92 @@
 			};
 			name = Release;
 		};
+		FFF856C1152B7373001B3E92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cloudy-OSX/cloudy-OSX-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "cloudy-OSX/cloudy-OSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FFF856C2152B7373001B3E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cloudy-OSX/cloudy-OSX-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "cloudy-OSX/cloudy-OSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FFF856C4152B7373001B3E92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cloudy-OSX.app/Contents/MacOS/cloudy-OSX";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cloudy-OSX/cloudy-OSX-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "cloudy-OSXTests/cloudy-OSXTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FFF856C5152B7373001B3E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cloudy-OSX.app/Contents/MacOS/cloudy-OSX";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cloudy-OSX/cloudy-OSX-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "cloudy-OSXTests/cloudy-OSXTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -490,6 +813,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		FFF856C0152B7373001B3E92 /* Build configuration list for PBXNativeTarget "cloudy-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF856C1152B7373001B3E92 /* Debug */,
+				FFF856C2152B7373001B3E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FFF856C3152B7373001B3E92 /* Build configuration list for PBXNativeTarget "cloudy-OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF856C4152B7373001B3E92 /* Debug */,
+				FFF856C5152B7373001B3E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
