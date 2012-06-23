@@ -6,8 +6,14 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
+	#import <UIKit/UIKit.h>
+	#define CLAppDelegateSuperClass UIResponder
+#else
+	#import <Cocoa/Cocoa.h>
+	#define CLAppDelegateSuperClass NSResponder
+#endif
 
-@interface CLAppDelegate : UIResponder <UIApplicationDelegate>
+@interface CLAppDelegate : CLAppDelegateSuperClass
 
 @end

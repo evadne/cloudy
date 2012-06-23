@@ -1,0 +1,9 @@
+[submodule "externals/C3PO"]
+	path = externals/C3PO
+	url = git://github.com/iridia/C3PO.git
+[submodule "externals/IRFoundations"]
+	path = externals/IRFoundations
+	url = git://github.com/iridia/IRFoundations.git
+[submodule "externals/Chameleon"]
+	path = externals/Chameleon
+	url = git://github.com/iridia/Chameleon.git

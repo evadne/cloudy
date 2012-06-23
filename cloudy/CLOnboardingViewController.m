@@ -13,7 +13,7 @@
 @end
 
 @implementation CLOnboardingViewController
-@synthesize doneItem;
+@synthesize doneItem, onDone;
 @synthesize webView;
 
 + (BOOL) needsOnboarding {
@@ -22,35 +22,24 @@
 
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+- (void) viewDidUnload {
+	
+	[self setWebView:nil];
+	[self setDoneItem:nil];
+	[super viewDidUnload];
+	
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	
+	return (interfaceOrientation == UIInterfaceOrientationPortrait);
+	
 }
 
-- (void)viewDidUnload
-{
-    [self setWebView:nil];
-    [self setDoneItem:nil];
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
+- (IBAction) handleDone:(UIBarButtonItem *)sender {
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
+	if (self.onDone)
+		self.onDone();
 
-- (IBAction)handleDone:(UIBarButtonItem *)sender {
 }
 @end

@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		FFF8574E152B7EB5001B3E92 /* Chameleon */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FFF8574F152B7EB5001B3E92 /* Build configuration list for PBXAggregateTarget "Chameleon" */;
+			buildPhases = (
+				FFF85752152B7EB8001B3E92 /* Run Script: Build Chameleon Frameworks */,
+			);
+			dependencies = (
+			);
+			name = Chameleon;
+			productName = Chameleon;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		FF167A8E14FA9B5B00C9DA0B /* CLItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */; };
 		FF167A9114FAA11200C9DA0B /* CLDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = FF167A9014FAA11200C9DA0B /* CLDefines.m */; };
@@ -23,16 +37,32 @@
 		FF97058B14FA88B60083413C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058A14FA88B60083413C /* Foundation.framework */; };
 		FF97058D14FA88B60083413C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058C14FA88B60083413C /* CoreGraphics.framework */; };
 		FF97058F14FA88B60083413C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058E14FA88B60083413C /* CoreData.framework */; };
-		FF97059514FA88B60083413C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF97059314FA88B60083413C /* InfoPlist.strings */; };
 		FF97059714FA88B60083413C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97059614FA88B60083413C /* main.m */; };
 		FF97059B14FA88B60083413C /* CLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97059A14FA88B60083413C /* CLAppDelegate.m */; };
 		FF9705A614FA88B70083413C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF9705A514FA88B70083413C /* SenTestingKit.framework */; };
 		FF9705A714FA88B70083413C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058814FA88B60083413C /* UIKit.framework */; };
 		FF9705A814FA88B70083413C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058A14FA88B60083413C /* Foundation.framework */; };
 		FF9705A914FA88B70083413C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058E14FA88B60083413C /* CoreData.framework */; };
-		FF9705B114FA88B70083413C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF9705AF14FA88B70083413C /* InfoPlist.strings */; };
-		FF9705B414FA88B70083413C /* cloudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9705B314FA88B70083413C /* cloudyTests.m */; };
 		FF97FC4B14FA981900CBCFF1 /* CLStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF97FC4A14FA981900CBCFF1 /* CLStoryboard.storyboard */; };
+		FFF856B3152B7373001B3E92 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF9705A514FA88B70083413C /* SenTestingKit.framework */; };
+		FFF8571E152B7665001B3E92 /* CLAppDelegate_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF8571D152B7665001B3E92 /* CLAppDelegate_iOS.m */; };
+		FFF85722152B77E5001B3E92 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF85721152B77E5001B3E92 /* Cocoa.framework */; };
+		FFF85724152B788C001B3E92 /* CLAppDelegate_OSX.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF856A8152B7372001B3E92 /* CLAppDelegate_OSX.m */; };
+		FFF85726152B7896001B3E92 /* crt1.o in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF85725152B7896001B3E92 /* crt1.o */; };
+		FFF85727152B789F001B3E92 /* CLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97059A14FA88B60083413C /* CLAppDelegate.m */; };
+		FFF85729152B7960001B3E92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF97059614FA88B60083413C /* main.m */; };
+		FFF8572D152B7A81001B3E92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFF85730152B7A81001B3E92 /* InfoPlist.strings */; };
+		FFF8572E152B7A81001B3E92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFF85730152B7A81001B3E92 /* InfoPlist.strings */; };
+		FFF85736152B7AEC001B3E92 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FFF85733152B7AEC001B3E92 /* Credits.rtf */; };
+		FFF85737152B7AEC001B3E92 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF85734152B7AEC001B3E92 /* MainMenu.xib */; };
+		FFF85739152B7BC9001B3E92 /* CLModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF6C27B91520E9FB0000371A /* CLModel.xcdatamodeld */; };
+		FFF85749152B7E3C001B3E92 /* IRFoundationsX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF85746152B7E26001B3E92 /* IRFoundationsX.framework */; };
+		FFF85766152B8244001B3E92 /* CLStatusItemMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF85765152B8244001B3E92 /* CLStatusItemMenu.xib */; };
+		FFF85771152B849A001B3E92 /* CLStatusItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF85770152B849A001B3E92 /* CLStatusItem.m */; };
+		FFF857CF152B86BE001B3E92 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF857CE152B86BD001B3E92 /* libxml2.dylib */; };
+		FFF857D5152B8B53001B3E92 /* CLDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF857D4152B8B53001B3E92 /* CLDataStore.m */; };
+		FFF857D6152B8B53001B3E92 /* CLDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF857D4152B8B53001B3E92 /* CLDataStore.m */; };
+		FFF857D8152B8BCF001B3E92 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF857D7152B8BCF001B3E92 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,13 +73,56 @@
 			remoteGlobalIDString = FF97058314FA88B60083413C;
 			remoteInfo = cloudy;
 		};
+		FFF856B5152B7373001B3E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF97057B14FA88B60083413C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFF85692152B7372001B3E92;
+			remoteInfo = "cloudy-OSX";
+		};
+		FFF85743152B7E26001B3E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF8573A152B7E25001B3E92 /* IRFoundations.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFD6F972150AFF76007173EA;
+			remoteInfo = IRFoundationsTouch;
+		};
+		FFF85745152B7E26001B3E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF8573A152B7E25001B3E92 /* IRFoundations.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFD6F973150AFF76007173EA;
+			remoteInfo = IRFoundationsX;
+		};
+		FFF85747152B7E26001B3E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF8573A152B7E25001B3E92 /* IRFoundations.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFD6F974150AFF76007173EA;
+			remoteInfo = IRFoundationsTest;
+		};
+		FFF85753152B7ECE001B3E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF97057B14FA88B60083413C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFF8574E152B7EB5001B3E92;
+			remoteInfo = Chameleon;
+		};
+		FFF85755152B7F7E001B3E92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF8573A152B7E25001B3E92 /* IRFoundations.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FF72C1F014278ABF00B5D838;
+			remoteInfo = IRFoundationsX;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FF167A8C14FA9B5B00C9DA0B /* CLItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLItemsViewController.h; path = cloudy/CLItemsViewController.h; sourceTree = "<group>"; };
 		FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLItemsViewController.m; path = cloudy/CLItemsViewController.m; sourceTree = "<group>"; };
-		FF167A8F14FAA0D700C9DA0B /* CLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLDefines.h; path = cloudy/CLDefines.h; sourceTree = "<group>"; };
-		FF167A9014FAA11200C9DA0B /* CLDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLDefines.m; path = cloudy/CLDefines.m; sourceTree = "<group>"; };
+		FF167A8F14FAA0D700C9DA0B /* CLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDefines.h; sourceTree = "<group>"; };
+		FF167A9014FAA11200C9DA0B /* CLDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDefines.m; sourceTree = "<group>"; };
+		FF5357BE152C8B9B004BB5B7 /* CLiTunesScriptingDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLiTunesScriptingDefinition.h; path = cloudy/CLiTunesScriptingDefinition.h; sourceTree = "<group>"; };
 		FF6C27BA1520E9FB0000371A /* CLModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CLModel.xcdatamodel; sourceTree = "<group>"; };
 		FF6C27C11520F2FB0000371A /* CLOnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLOnboardingViewController.h; path = cloudy/CLOnboardingViewController.h; sourceTree = "<group>"; };
 		FF6C27C21520F2FB0000371A /* CLOnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLOnboardingViewController.m; path = cloudy/CLOnboardingViewController.m; sourceTree = "<group>"; };
@@ -66,20 +139,36 @@
 		FF97058A14FA88B60083413C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FF97058C14FA88B60083413C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		FF97058E14FA88B60083413C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		FF97059214FA88B60083413C /* cloudy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cloudy-Info.plist"; sourceTree = "<group>"; };
-		FF97059414FA88B60083413C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FF97059614FA88B60083413C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FF97059814FA88B60083413C /* cloudy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cloudy-Prefix.pch"; sourceTree = "<group>"; };
-		FF97059914FA88B60083413C /* CLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CLAppDelegate.h; path = cloudy/CLAppDelegate.h; sourceTree = "<group>"; };
-		FF97059A14FA88B60083413C /* CLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CLAppDelegate.m; path = cloudy/CLAppDelegate.m; sourceTree = "<group>"; };
-		FF9705A414FA88B70083413C /* cloudyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = cloudyTests.octest; path = "cloudy-iOS-tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF97059814FA88B60083413C /* cloudy-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cloudy-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		FF97059914FA88B60083413C /* CLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLAppDelegate.h; sourceTree = "<group>"; };
+		FF97059A14FA88B60083413C /* CLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLAppDelegate.m; sourceTree = "<group>"; };
+		FF9705A414FA88B70083413C /* cloudyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = cloudyTests.octest; path = "cloudy-iOS-Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9705A514FA88B70083413C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		FF9705AE14FA88B70083413C /* cloudyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cloudyTests-Info.plist"; sourceTree = "<group>"; };
-		FF9705B014FA88B70083413C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FF9705B214FA88B70083413C /* cloudyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cloudyTests.h; sourceTree = "<group>"; };
-		FF9705B314FA88B70083413C /* cloudyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cloudyTests.m; sourceTree = "<group>"; };
-		FF9705C214FA89C80083413C /* cloudy-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "cloudy-iOS.entitlements"; sourceTree = SOURCE_ROOT; };
+		FF9705C214FA89C80083413C /* cloudy-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "cloudy-iOS.entitlements"; path = "cloudy/cloudy-iOS.entitlements"; sourceTree = SOURCE_ROOT; };
 		FF97FC4A14FA981900CBCFF1 /* CLStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CLStoryboard.storyboard; path = cloudy/CLStoryboard.storyboard; sourceTree = "<group>"; };
+		FFF8568D152B72C2001B3E92 /* cloudy-iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "cloudy-iOS-Info.plist"; sourceTree = "<group>"; };
+		FFF85693152B7372001B3E92 /* cloudy-OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cloudy-OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF856A7152B7372001B3E92 /* CLAppDelegate_OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLAppDelegate_OSX.h; sourceTree = "<group>"; };
+		FFF856A8152B7372001B3E92 /* CLAppDelegate_OSX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLAppDelegate_OSX.m; sourceTree = "<group>"; };
+		FFF856B2152B7373001B3E92 /* cloudy-OSX-Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cloudy-OSX-Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF8571C152B7665001B3E92 /* CLAppDelegate_iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAppDelegate_iOS.h; sourceTree = "<group>"; };
+		FFF8571D152B7665001B3E92 /* CLAppDelegate_iOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLAppDelegate_iOS.m; sourceTree = "<group>"; };
+		FFF85721152B77E5001B3E92 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		FFF85725152B7896001B3E92 /* crt1.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = crt1.o; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/crt1.o; sourceTree = DEVELOPER_DIR; };
+		FFF8572F152B7A81001B3E92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFF85731152B7AEC001B3E92 /* cloudy-OSX-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "cloudy-OSX-Info.plist"; sourceTree = "<group>"; };
+		FFF85732152B7AEC001B3E92 /* cloudy-OSX-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "cloudy-OSX-Prefix.pch"; sourceTree = "<group>"; };
+		FFF85733152B7AEC001B3E92 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = Credits.rtf; path = cloudy/Credits.rtf; sourceTree = "<group>"; };
+		FFF85734152B7AEC001B3E92 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = cloudy/MainMenu.xib; sourceTree = "<group>"; };
+		FFF8573A152B7E25001B3E92 /* IRFoundations.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IRFoundations.xcodeproj; path = externals/IRFoundations/IRFoundations/IRFoundations.xcodeproj; sourceTree = "<group>"; };
+		FFF85765152B8244001B3E92 /* CLStatusItemMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CLStatusItemMenu.xib; path = cloudy/CLStatusItemMenu.xib; sourceTree = "<group>"; };
+		FFF8576F152B849A001B3E92 /* CLStatusItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLStatusItem.h; path = cloudy/CLStatusItem.h; sourceTree = "<group>"; };
+		FFF85770152B849A001B3E92 /* CLStatusItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLStatusItem.m; path = cloudy/CLStatusItem.m; sourceTree = "<group>"; };
+		FFF857CE152B86BD001B3E92 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libxml2.dylib; sourceTree = DEVELOPER_DIR; };
+		FFF857D3152B8B53001B3E92 /* CLDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLDataStore.h; path = cloudy/CLDataStore.h; sourceTree = "<group>"; };
+		FFF857D4152B8B53001B3E92 /* CLDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLDataStore.m; path = cloudy/CLDataStore.m; sourceTree = "<group>"; };
+		FFF857D7152B8BCF001B3E92 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,25 +202,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFF85690152B7372001B3E92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF85726152B7896001B3E92 /* crt1.o in Frameworks */,
+				FFF857CF152B86BE001B3E92 /* libxml2.dylib in Frameworks */,
+				FFF85722152B77E5001B3E92 /* Cocoa.framework in Frameworks */,
+				FFF857D8152B8BCF001B3E92 /* CoreData.framework in Frameworks */,
+				FFF85749152B7E3C001B3E92 /* IRFoundationsX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF856AE152B7373001B3E92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF856B3152B7373001B3E92 /* SenTestingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF5357BD152C8B35004BB5B7 /* Scripting Bridge Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				FF5357BE152C8B9B004BB5B7 /* CLiTunesScriptingDefinition.h */,
+			);
+			name = "Scripting Bridge Definitions";
+			sourceTree = "<group>";
+		};
 		FF97057914FA88B60083413C = {
 			isa = PBXGroup;
 			children = (
-				FF167A8F14FAA0D700C9DA0B /* CLDefines.h */,
-				FF167A9014FAA11200C9DA0B /* CLDefines.m */,
-				FF97059914FA88B60083413C /* CLAppDelegate.h */,
-				FF97059A14FA88B60083413C /* CLAppDelegate.m */,
+				FF97059114FA88B60083413C /* Environment */,
+				FFF857D1152B8A89001B3E92 /* Scaffold */,
+				FFF857D2152B8B3F001B3E92 /* Model */,
 				FF6C27C11520F2FB0000371A /* CLOnboardingViewController.h */,
 				FF6C27C21520F2FB0000371A /* CLOnboardingViewController.m */,
 				FF167A8C14FA9B5B00C9DA0B /* CLItemsViewController.h */,
 				FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */,
+				FFF8576F152B849A001B3E92 /* CLStatusItem.h */,
+				FFF85770152B849A001B3E92 /* CLStatusItem.m */,
 				FF97FC4A14FA981900CBCFF1 /* CLStoryboard.storyboard */,
-				FF6C27B91520E9FB0000371A /* CLModel.xcdatamodeld */,
-				FF97059114FA88B60083413C /* Supporting Files */,
-				FF9705AC14FA88B70083413C /* cloudyTests */,
-				FF97058714FA88B60083413C /* Frameworks */,
+				FF5357BD152C8B35004BB5B7 /* Scripting Bridge Definitions */,
+				FFF85738152B7B34001B3E92 /* Resources */,
+				FFF857D0152B8A6E001B3E92 /* Frameworks */,
 				FF97058514FA88B60083413C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,11 +258,13 @@
 			children = (
 				FF97058414FA88B60083413C /* cloudy-iOS.app */,
 				FF9705A414FA88B70083413C /* cloudyTests.octest */,
+				FFF85693152B7372001B3E92 /* cloudy-OSX.app */,
+				FFF856B2152B7373001B3E92 /* cloudy-OSX-Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FF97058714FA88B60083413C /* Frameworks */ = {
+		FF97058714FA88B60083413C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				FF7AF1021520E37600B04AAB /* libz.dylib */,
@@ -162,39 +281,89 @@
 				FF7AF1051520E37600B04AAB /* SystemConfiguration.framework */,
 				FF97058814FA88B60083413C /* UIKit.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		FF97059114FA88B60083413C /* Supporting Files */ = {
+		FF97059114FA88B60083413C /* Environment */ = {
 			isa = PBXGroup;
 			children = (
-				FF9705C214FA89C80083413C /* cloudy-iOS.entitlements */,
+				FF167A8F14FAA0D700C9DA0B /* CLDefines.h */,
+				FF167A9014FAA11200C9DA0B /* CLDefines.m */,
 				FF97059614FA88B60083413C /* main.m */,
-				FF97059814FA88B60083413C /* cloudy-Prefix.pch */,
-				FF97059214FA88B60083413C /* cloudy-Info.plist */,
-				FF97059314FA88B60083413C /* InfoPlist.strings */,
+				FF9705C214FA89C80083413C /* cloudy-iOS.entitlements */,
+				FF97059814FA88B60083413C /* cloudy-iOS-Prefix.pch */,
+				FFF85732152B7AEC001B3E92 /* cloudy-OSX-Prefix.pch */,
+				FFF8568D152B72C2001B3E92 /* cloudy-iOS-Info.plist */,
+				FFF85731152B7AEC001B3E92 /* cloudy-OSX-Info.plist */,
+				FFF85730152B7A81001B3E92 /* InfoPlist.strings */,
 			);
-			name = "Supporting Files";
+			name = Environment;
 			path = cloudy;
 			sourceTree = "<group>";
 		};
-		FF9705AC14FA88B70083413C /* cloudyTests */ = {
+		FFF85697152B7372001B3E92 /* OSX */ = {
 			isa = PBXGroup;
 			children = (
-				FF9705B214FA88B70083413C /* cloudyTests.h */,
-				FF9705B314FA88B70083413C /* cloudyTests.m */,
-				FF9705AD14FA88B70083413C /* Supporting Files */,
+				FFF85725152B7896001B3E92 /* crt1.o */,
+				FFF857CE152B86BD001B3E92 /* libxml2.dylib */,
+				FFF85721152B77E5001B3E92 /* Cocoa.framework */,
+				FFF857D7152B8BCF001B3E92 /* CoreData.framework */,
 			);
-			path = cloudyTests;
+			name = OSX;
 			sourceTree = "<group>";
 		};
-		FF9705AD14FA88B70083413C /* Supporting Files */ = {
+		FFF85738152B7B34001B3E92 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FF9705AE14FA88B70083413C /* cloudyTests-Info.plist */,
-				FF9705AF14FA88B70083413C /* InfoPlist.strings */,
+				FFF85765152B8244001B3E92 /* CLStatusItemMenu.xib */,
+				FFF85733152B7AEC001B3E92 /* Credits.rtf */,
+				FFF85734152B7AEC001B3E92 /* MainMenu.xib */,
 			);
-			name = "Supporting Files";
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FFF8573B152B7E25001B3E92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFF85744152B7E26001B3E92 /* libIRFoundationsTouch.a */,
+				FFF85746152B7E26001B3E92 /* IRFoundationsX.framework */,
+				FFF85748152B7E26001B3E92 /* IRFoundationsTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFF857D0152B8A6E001B3E92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF97058714FA88B60083413C /* iOS */,
+				FFF85697152B7372001B3E92 /* OSX */,
+				FFF8573A152B7E25001B3E92 /* IRFoundations.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFF857D1152B8A89001B3E92 /* Scaffold */ = {
+			isa = PBXGroup;
+			children = (
+				FF97059914FA88B60083413C /* CLAppDelegate.h */,
+				FF97059A14FA88B60083413C /* CLAppDelegate.m */,
+				FFF8571C152B7665001B3E92 /* CLAppDelegate_iOS.h */,
+				FFF8571D152B7665001B3E92 /* CLAppDelegate_iOS.m */,
+				FFF856A7152B7372001B3E92 /* CLAppDelegate_OSX.h */,
+				FFF856A8152B7372001B3E92 /* CLAppDelegate_OSX.m */,
+			);
+			name = Scaffold;
+			path = cloudy;
+			sourceTree = "<group>";
+		};
+		FFF857D2152B8B3F001B3E92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C27B91520E9FB0000371A /* CLModel.xcdatamodeld */,
+				FFF857D3152B8B53001B3E92 /* CLDataStore.h */,
+				FFF857D4152B8B53001B3E92 /* CLDataStore.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,9 +386,9 @@
 			productReference = FF97058414FA88B60083413C /* cloudy-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FF9705A314FA88B70083413C /* cloudy-iOS-tests */ = {
+		FF9705A314FA88B70083413C /* cloudy-iOS-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF9705BA14FA88B70083413C /* Build configuration list for PBXNativeTarget "cloudy-iOS-tests" */;
+			buildConfigurationList = FF9705BA14FA88B70083413C /* Build configuration list for PBXNativeTarget "cloudy-iOS-Tests" */;
 			buildPhases = (
 				FF97059F14FA88B70083413C /* Sources */,
 				FF9705A014FA88B70083413C /* Frameworks */,
@@ -231,9 +400,48 @@
 			dependencies = (
 				FF9705AB14FA88B70083413C /* PBXTargetDependency */,
 			);
-			name = "cloudy-iOS-tests";
+			name = "cloudy-iOS-Tests";
 			productName = cloudyTests;
 			productReference = FF9705A414FA88B70083413C /* cloudyTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		FFF85692152B7372001B3E92 /* cloudy-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFF856C0152B7373001B3E92 /* Build configuration list for PBXNativeTarget "cloudy-OSX" */;
+			buildPhases = (
+				FFF8568F152B7372001B3E92 /* Sources */,
+				FFF85690152B7372001B3E92 /* Frameworks */,
+				FFF85691152B7372001B3E92 /* Resources */,
+				FFF85757152B805B001B3E92 /* Run Script: Copy Private Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFF85754152B7ECE001B3E92 /* PBXTargetDependency */,
+				FFF85756152B7F7E001B3E92 /* PBXTargetDependency */,
+			);
+			name = "cloudy-OSX";
+			productName = "cloudy-OSX";
+			productReference = FFF85693152B7372001B3E92 /* cloudy-OSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFF856B1152B7373001B3E92 /* cloudy-OSX-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFF856C3152B7373001B3E92 /* Build configuration list for PBXNativeTarget "cloudy-OSX-Tests" */;
+			buildPhases = (
+				FFF856AD152B7373001B3E92 /* Sources */,
+				FFF856AE152B7373001B3E92 /* Frameworks */,
+				FFF856AF152B7373001B3E92 /* Resources */,
+				FFF856B0152B7373001B3E92 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFF856B6152B7373001B3E92 /* PBXTargetDependency */,
+			);
+			name = "cloudy-OSX-Tests";
+			productName = "cloudy-OSXTests";
+			productReference = FFF856B2152B7373001B3E92 /* cloudy-OSX-Tests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -254,21 +462,54 @@
 			mainGroup = FF97057914FA88B60083413C;
 			productRefGroup = FF97058514FA88B60083413C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FFF8573B152B7E25001B3E92 /* Products */;
+					ProjectRef = FFF8573A152B7E25001B3E92 /* IRFoundations.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FF97058314FA88B60083413C /* cloudy-iOS */,
-				FF9705A314FA88B70083413C /* cloudy-iOS-tests */,
+				FF9705A314FA88B70083413C /* cloudy-iOS-Tests */,
+				FFF85692152B7372001B3E92 /* cloudy-OSX */,
+				FFF856B1152B7373001B3E92 /* cloudy-OSX-Tests */,
+				FFF8574E152B7EB5001B3E92 /* Chameleon */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FFF85744152B7E26001B3E92 /* libIRFoundationsTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIRFoundationsTouch.a;
+			remoteRef = FFF85743152B7E26001B3E92 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF85746152B7E26001B3E92 /* IRFoundationsX.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IRFoundationsX.framework;
+			remoteRef = FFF85745152B7E26001B3E92 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFF85748152B7E26001B3E92 /* IRFoundationsTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IRFoundationsTest.octest;
+			remoteRef = FFF85747152B7E26001B3E92 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FF97058214FA88B60083413C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF97059514FA88B60083413C /* InfoPlist.strings in Resources */,
 				FF97FC4B14FA981900CBCFF1 /* CLStoryboard.storyboard in Resources */,
+				FFF8572D152B7A81001B3E92 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +517,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF9705B114FA88B70083413C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF85691152B7372001B3E92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF8572E152B7A81001B3E92 /* InfoPlist.strings in Resources */,
+				FFF85736152B7AEC001B3E92 /* Credits.rtf in Resources */,
+				FFF85737152B7AEC001B3E92 /* MainMenu.xib in Resources */,
+				FFF85766152B8244001B3E92 /* CLStatusItemMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF856AF152B7373001B3E92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +554,47 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		FFF856B0152B7373001B3E92 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		FFF85752152B7EB8001B3E92 /* Run Script: Build Chameleon Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: Build Chameleon Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$PROJECT_DIR/externals/Chameleon/UIKit\"\n\nxcodebuild -alltargets -sdk macosx OBJROOT=\"$OBJROOT\" SYMROOT=\"$SYMROOT\" -configuration \"$CONFIGURATION\" CODE_SIGN_IDENTITY=\"Mac Developer: Evadne Wu (3JKY47N3VU)\"";
+		};
+		FFF85757152B805B001B3E92 /* Run Script: Copy Private Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: Copy Private Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FRAMEWORKS=\"UIKit.framework\"\n\nPRIVATE_FRAMEWORKS_PATH=${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\n\nrm -rf \"${PRIVATE_FRAMEWORKS_PATH}\"    \nmkdir -p ${PRIVATE_FRAMEWORKS_PATH}\n\nfor fwk in ${FRAMEWORKS}\ndo\n    FRAMEWORK_NAME=${BUILT_PRODUCTS_DIR}/${fwk}\n    cp -vfRH \"${FRAMEWORK_NAME}\" \"${PRIVATE_FRAMEWORKS_PATH}\"\ndone\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -309,6 +608,8 @@
 				FF167A9114FAA11200C9DA0B /* CLDefines.m in Sources */,
 				FF6C27BB1520E9FB0000371A /* CLModel.xcdatamodeld in Sources */,
 				FF6C27C41520F2FB0000371A /* CLOnboardingViewController.m in Sources */,
+				FFF8571E152B7665001B3E92 /* CLAppDelegate_iOS.m in Sources */,
+				FFF857D5152B8B53001B3E92 /* CLDataStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +617,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF9705B414FA88B70083413C /* cloudyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF8568F152B7372001B3E92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF85727152B789F001B3E92 /* CLAppDelegate.m in Sources */,
+				FFF85724152B788C001B3E92 /* CLAppDelegate_OSX.m in Sources */,
+				FFF85729152B7960001B3E92 /* main.m in Sources */,
+				FFF85739152B7BC9001B3E92 /* CLModel.xcdatamodeld in Sources */,
+				FFF85771152B849A001B3E92 /* CLStatusItem.m in Sources */,
+				FFF857D6152B8B53001B3E92 /* CLDataStore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF856AD152B7373001B3E92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,21 +648,28 @@
 			target = FF97058314FA88B60083413C /* cloudy-iOS */;
 			targetProxy = FF9705AA14FA88B70083413C /* PBXContainerItemProxy */;
 		};
+		FFF856B6152B7373001B3E92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFF85692152B7372001B3E92 /* cloudy-OSX */;
+			targetProxy = FFF856B5152B7373001B3E92 /* PBXContainerItemProxy */;
+		};
+		FFF85754152B7ECE001B3E92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFF8574E152B7EB5001B3E92 /* Chameleon */;
+			targetProxy = FFF85753152B7ECE001B3E92 /* PBXContainerItemProxy */;
+		};
+		FFF85756152B7F7E001B3E92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IRFoundationsX;
+			targetProxy = FFF85755152B7F7E001B3E92 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FF97059314FA88B60083413C /* InfoPlist.strings */ = {
+		FFF85730152B7A81001B3E92 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FF97059414FA88B60083413C /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		FF9705AF14FA88B70083413C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF9705B014FA88B70083413C /* en */,
+				FFF8572F152B7A81001B3E92 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -357,6 +684,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer: Evadne Wu (3JKY47N3VU)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -370,7 +698,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/include/libxml2\"/**",
+					"\"$(PROJECT_DIR)/externals/IRFoundations\"/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				"PROVISIONING_PROFILE[sdk=macosx*]" = "D5CA38BC-39BD-4E36-8515-A677597AD97C";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -382,14 +715,20 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer: Evadne Wu (3JKY47N3VU)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/include/libxml2\"/**",
+					"\"$(PROJECT_DIR)/externals/IRFoundations\"/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=macosx*]" = "D5CA38BC-39BD-4E36-8515-A677597AD97C";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -404,8 +743,8 @@
 					"\"$(SRCROOT)/externals/ParseSDK\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cloudy/cloudy-Prefix.pch";
-				INFOPLIST_FILE = "cloudy/cloudy-Info.plist";
+				GCC_PREFIX_HEADER = "cloudy/cloudy-iOS-Prefix.pch";
+				INFOPLIST_FILE = "cloudy/cloudy-iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -420,8 +759,8 @@
 					"\"$(SRCROOT)/externals/ParseSDK\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cloudy/cloudy-Prefix.pch";
-				INFOPLIST_FILE = "cloudy/cloudy-Info.plist";
+				GCC_PREFIX_HEADER = "cloudy/cloudy-iOS-Prefix.pch";
+				INFOPLIST_FILE = "cloudy/cloudy-iOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -461,6 +800,110 @@
 			};
 			name = Release;
 		};
+		FFF856C1152B7373001B3E92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cloudy/cloudy-OSX-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "cloudy/cloudy-OSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FFF856C2152B7373001B3E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cloudy/cloudy-OSX-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "cloudy/cloudy-OSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FFF856C4152B7373001B3E92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cloudy-OSX.app/Contents/MacOS/cloudy-OSX";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cloudy-OSX/cloudy-OSX-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "cloudy-OSXTests/cloudy-OSXTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FFF856C5152B7373001B3E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cloudy-OSX.app/Contents/MacOS/cloudy-OSX";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cloudy-OSX/cloudy-OSX-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "cloudy-OSXTests/cloudy-OSXTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		FFF85750152B7EB5001B3E92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FFF85751152B7EB5001B3E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -482,11 +925,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF9705BA14FA88B70083413C /* Build configuration list for PBXNativeTarget "cloudy-iOS-tests" */ = {
+		FF9705BA14FA88B70083413C /* Build configuration list for PBXNativeTarget "cloudy-iOS-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF9705BB14FA88B70083413C /* Debug */,
 				FF9705BC14FA88B70083413C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFF856C0152B7373001B3E92 /* Build configuration list for PBXNativeTarget "cloudy-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF856C1152B7373001B3E92 /* Debug */,
+				FFF856C2152B7373001B3E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFF856C3152B7373001B3E92 /* Build configuration list for PBXNativeTarget "cloudy-OSX-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF856C4152B7373001B3E92 /* Debug */,
+				FFF856C5152B7373001B3E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFF8574F152B7EB5001B3E92 /* Build configuration list for PBXAggregateTarget "Chameleon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF85750152B7EB5001B3E92 /* Debug */,
+				FFF85751152B7EB5001B3E92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
