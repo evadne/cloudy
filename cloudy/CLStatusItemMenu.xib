@@ -32,44 +32,67 @@
 			<object class="NSCustomObject" id="1004">
 				<string key="NSClassName">NSApplication</string>
 			</object>
-			<object class="NSMenu" id="25890071">
+			<object class="NSMenu" id="399748308">
 				<string key="NSTitle"/>
 				<array class="NSMutableArray" key="NSMenuItems">
-					<object class="NSMenuItem" id="934401499">
-						<reference key="NSMenu" ref="25890071"/>
-						<string key="NSTitle">Item 1</string>
+					<object class="NSMenuItem" id="585223967">
+						<reference key="NSMenu" ref="399748308"/>
+						<bool key="NSIsDisabled">YES</bool>
+						<string key="NSTitle">New…</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<object class="NSCustomResource" key="NSOnImage" id="789311645">
+						<object class="NSCustomResource" key="NSOnImage" id="748338856">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">NSMenuCheckmark</string>
 						</object>
-						<object class="NSCustomResource" key="NSMixedImage" id="355662107">
+						<object class="NSCustomResource" key="NSMixedImage" id="420916851">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">NSMenuMixedState</string>
 						</object>
+						<int key="NSTag">1024</int>
 					</object>
-					<object class="NSMenuItem" id="818056101">
-						<reference key="NSMenu" ref="25890071"/>
-						<string key="NSTitle">Item 2</string>
+					<object class="NSMenuItem" id="612389367">
+						<reference key="NSMenu" ref="399748308"/>
+						<bool key="NSIsDisabled">YES</bool>
+						<bool key="NSIsSeparator">YES</bool>
+						<string key="NSTitle"/>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="789311645"/>
-						<reference key="NSMixedImage" ref="355662107"/>
+						<reference key="NSOnImage" ref="748338856"/>
+						<reference key="NSMixedImage" ref="420916851"/>
+						<int key="NSTag">2048</int>
 					</object>
-					<object class="NSMenuItem" id="582789609">
-						<reference key="NSMenu" ref="25890071"/>
-						<string key="NSTitle">Item 3</string>
-						<string key="NSKeyEquiv"/>
+					<object class="NSMenuItem" id="334590885">
+						<reference key="NSMenu" ref="399748308"/>
+						<string key="NSTitle">Quit</string>
+						<string key="NSKeyEquiv">q</string>
+						<int key="NSKeyEquivModMask">1048576</int>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="789311645"/>
-						<reference key="NSMixedImage" ref="355662107"/>
+						<reference key="NSOnImage" ref="748338856"/>
+						<reference key="NSMixedImage" ref="420916851"/>
 					</object>
 				</array>
 			</object>
 		</array>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
-			<array class="NSMutableArray" key="connectionRecords"/>
+			<array class="NSMutableArray" key="connectionRecords">
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">terminate:</string>
+						<reference key="source" ref="1004"/>
+						<reference key="destination" ref="334590885"/>
+					</object>
+					<int key="connectionID">7</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">newDocument:</string>
+						<reference key="source" ref="1003"/>
+						<reference key="destination" ref="585223967"/>
+					</object>
+					<int key="connectionID">8</int>
+				</object>
+			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
 					<object class="IBObjectRecord">
@@ -98,28 +121,28 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">1</int>
-						<reference key="object" ref="25890071"/>
+						<reference key="object" ref="399748308"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="934401499"/>
-							<reference ref="818056101"/>
-							<reference ref="582789609"/>
+							<reference ref="585223967"/>
+							<reference ref="334590885"/>
+							<reference ref="612389367"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">2</int>
-						<reference key="object" ref="934401499"/>
-						<reference key="parent" ref="25890071"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">3</int>
-						<reference key="object" ref="818056101"/>
-						<reference key="parent" ref="25890071"/>
+						<reference key="object" ref="585223967"/>
+						<reference key="parent" ref="399748308"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">4</int>
-						<reference key="object" ref="582789609"/>
-						<reference key="parent" ref="25890071"/>
+						<reference key="object" ref="334590885"/>
+						<reference key="parent" ref="399748308"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">6</int>
+						<reference key="object" ref="612389367"/>
+						<reference key="parent" ref="399748308"/>
 					</object>
 				</array>
 			</object>
@@ -130,14 +153,14 @@
 				<string key="1.CustomClassName">CLStatusItemMenu</string>
 				<string key="1.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="3.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">4</int>
+			<int key="maxID">8</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

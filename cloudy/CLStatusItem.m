@@ -34,4 +34,13 @@
 
 @implementation CLStatusItemMenu
 
+- (void) setAddItems:(NSArray *)addItems {
+
+	NSUInteger oldAddItemIndex = [self indexOfItemWithTag:1024];
+	NSUInteger oldSeparatorItemIndex = [self indexOfItemWithTag:2048];
+	
+	//	Remove all the intermediate items and set up new ones
+	
+}
+
 @end

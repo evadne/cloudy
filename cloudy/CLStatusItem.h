@@ -18,4 +18,6 @@
 
 @interface CLStatusItemMenu : NSMenu
 
+@property (nonatomic, readwrite, retain) NSArray *addItems;
+
 @end
