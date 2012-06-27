@@ -22,6 +22,8 @@
 
 /* Begin PBXBuildFile section */
 		FF05E29B159B41D60051060B /* CLDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = FF05E29A159B41D60051060B /* CLDataProvider.m */; };
+		FF05E29E159B42CF0051060B /* CLDataProvider+Registry.m in Sources */ = {isa = PBXBuildFile; fileRef = FF05E29D159B42CF0051060B /* CLDataProvider+Registry.m */; };
+		FF05E2A1159B442D0051060B /* CLDataProvider_iTunes.m in Sources */ = {isa = PBXBuildFile; fileRef = FF05E2A0159B442D0051060B /* CLDataProvider_iTunes.m */; };
 		FF167A8E14FA9B5B00C9DA0B /* CLItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */; };
 		FF167A9114FAA11200C9DA0B /* CLDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = FF167A9014FAA11200C9DA0B /* CLDefines.m */; };
 		FF6C27BB1520E9FB0000371A /* CLModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF6C27B91520E9FB0000371A /* CLModel.xcdatamodeld */; };
@@ -143,6 +145,10 @@
 /* Begin PBXFileReference section */
 		FF05E299159B41D60051060B /* CLDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLDataProvider.h; path = cloudy/CLDataProvider.h; sourceTree = "<group>"; };
 		FF05E29A159B41D60051060B /* CLDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLDataProvider.m; path = cloudy/CLDataProvider.m; sourceTree = "<group>"; };
+		FF05E29C159B42CF0051060B /* CLDataProvider+Registry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CLDataProvider+Registry.h"; path = "cloudy/CLDataProvider+Registry.h"; sourceTree = "<group>"; };
+		FF05E29D159B42CF0051060B /* CLDataProvider+Registry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CLDataProvider+Registry.m"; path = "cloudy/CLDataProvider+Registry.m"; sourceTree = "<group>"; };
+		FF05E29F159B442D0051060B /* CLDataProvider_iTunes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLDataProvider_iTunes.h; path = cloudy/CLDataProvider_iTunes.h; sourceTree = "<group>"; };
+		FF05E2A0159B442D0051060B /* CLDataProvider_iTunes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLDataProvider_iTunes.m; path = cloudy/CLDataProvider_iTunes.m; sourceTree = "<group>"; };
 		FF167A8C14FA9B5B00C9DA0B /* CLItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLItemsViewController.h; path = cloudy/CLItemsViewController.h; sourceTree = "<group>"; };
 		FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLItemsViewController.m; path = cloudy/CLItemsViewController.m; sourceTree = "<group>"; };
 		FF167A8F14FAA0D700C9DA0B /* CLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDefines.h; sourceTree = "<group>"; };
@@ -268,10 +274,21 @@
 			children = (
 				FFF8576F152B849A001B3E92 /* CLStatusItem.h */,
 				FFF85770152B849A001B3E92 /* CLStatusItem.m */,
-				FF05E299159B41D60051060B /* CLDataProvider.h */,
-				FF05E29A159B41D60051060B /* CLDataProvider.m */,
 			);
 			name = Desktop;
+			sourceTree = "<group>";
+		};
+		FF05E2A2159B44330051060B /* Data Providers */ = {
+			isa = PBXGroup;
+			children = (
+				FF05E299159B41D60051060B /* CLDataProvider.h */,
+				FF05E29A159B41D60051060B /* CLDataProvider.m */,
+				FF05E29C159B42CF0051060B /* CLDataProvider+Registry.h */,
+				FF05E29D159B42CF0051060B /* CLDataProvider+Registry.m */,
+				FF05E29F159B442D0051060B /* CLDataProvider_iTunes.h */,
+				FF05E2A0159B442D0051060B /* CLDataProvider_iTunes.m */,
+			);
+			name = "Data Providers";
 			sourceTree = "<group>";
 		};
 		FF5357BD152C8B35004BB5B7 /* Scripting Bridge Definitions */ = {
@@ -290,6 +307,7 @@
 				FFF857D2152B8B3F001B3E92 /* Model */,
 				FF05E297159B41B50051060B /* Mobile */,
 				FF05E298159B41C60051060B /* Desktop */,
+				FF05E2A2159B44330051060B /* Data Providers */,
 				FF5357BD152C8B35004BB5B7 /* Scripting Bridge Definitions */,
 				FFF85738152B7B34001B3E92 /* Resources */,
 				FFF857D0152B8A6E001B3E92 /* Frameworks */,
@@ -692,6 +710,8 @@
 				FFF85771152B849A001B3E92 /* CLStatusItem.m in Sources */,
 				FFF857D6152B8B53001B3E92 /* CLDataStore.m in Sources */,
 				FF05E29B159B41D60051060B /* CLDataProvider.m in Sources */,
+				FF05E29E159B42CF0051060B /* CLDataProvider+Registry.m in Sources */,
+				FF05E2A1159B442D0051060B /* CLDataProvider_iTunes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

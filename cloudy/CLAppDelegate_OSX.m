@@ -6,15 +6,15 @@
 //  Copyright (c) 2012 Iridia Productions. All rights reserved.
 //
 
-#import "CLAppDelegate_OSX.h"
-#import "CLStatusItem.h"
+#import <objc/runtime.h>
 #import <IRFoundationsX/IRFoundationsX.h>
 
+#import "CLAppDelegate_OSX.h"
+#import "CLStatusItem.h"
+#import "CLDataProvider.h"
 
 @interface CLAppDelegate_OSX ()
-
 @property (strong, readwrite) NSStatusItem *statusItem;
-
 @end
 
 @implementation CLAppDelegate_OSX
