@@ -10,13 +10,12 @@
 
 @interface CLItemsViewController : UITableViewController
 
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *addBarButtonItem;
-- (IBAction)handleAddBarButtonItemTap:(UIBarButtonItem *)sender;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *addBarButtonItem;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *refreshBarButtonItem;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *actionBarButtonItem;
 
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *refreshBarButtonItem;
-- (IBAction)handleRefreshBarButtonItemTap:(UIBarButtonItem *)sender;
-
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *actionBarButtonItem;
-- (IBAction)handleActionBarButtonItemTap:(UIBarButtonItem *)sender;
+- (IBAction) handleAddBarButtonItemTap:(UIBarButtonItem *)sender;
+- (IBAction) handleRefreshBarButtonItemTap:(UIBarButtonItem *)sender;
+- (IBAction) handleActionBarButtonItemTap:(UIBarButtonItem *)sender;
 
 @end

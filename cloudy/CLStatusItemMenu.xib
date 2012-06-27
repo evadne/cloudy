@@ -2,18 +2,18 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1080</int>
-		<string key="IBDocument.SystemVersion">12A154q</string>
-		<string key="IBDocument.InterfaceBuilderVersion">2429</string>
-		<string key="IBDocument.AppKitVersion">1162.3</string>
-		<string key="IBDocument.HIToolboxVersion">604.00</string>
+		<string key="IBDocument.SystemVersion">12A256</string>
+		<string key="IBDocument.InterfaceBuilderVersion">2809</string>
+		<string key="IBDocument.AppKitVersion">1185</string>
+		<string key="IBDocument.HIToolboxVersion">622.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
-			<string key="NS.object.0">2429</string>
+			<string key="NS.object.0">2809</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
+			<string>NSCustomObject</string>
 			<string>NSMenu</string>
 			<string>NSMenuItem</string>
-			<string>NSCustomObject</string>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -35,21 +35,19 @@
 			<object class="NSMenu" id="399748308">
 				<string key="NSTitle"/>
 				<array class="NSMutableArray" key="NSMenuItems">
-					<object class="NSMenuItem" id="585223967">
+					<object class="NSMenuItem" id="334590885">
 						<reference key="NSMenu" ref="399748308"/>
-						<bool key="NSIsDisabled">YES</bool>
-						<string key="NSTitle">New…</string>
+						<string key="NSTitle">About Continuum</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<object class="NSCustomResource" key="NSOnImage" id="748338856">
+						<object class="NSCustomResource" key="NSOnImage" id="454638628">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">NSMenuCheckmark</string>
 						</object>
-						<object class="NSCustomResource" key="NSMixedImage" id="420916851">
+						<object class="NSCustomResource" key="NSMixedImage" id="843511103">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">NSMenuMixedState</string>
 						</object>
-						<int key="NSTag">1024</int>
 					</object>
 					<object class="NSMenuItem" id="612389367">
 						<reference key="NSMenu" ref="399748308"/>
@@ -58,18 +56,18 @@
 						<string key="NSTitle"/>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="748338856"/>
-						<reference key="NSMixedImage" ref="420916851"/>
+						<reference key="NSOnImage" ref="454638628"/>
+						<reference key="NSMixedImage" ref="843511103"/>
 						<int key="NSTag">2048</int>
 					</object>
-					<object class="NSMenuItem" id="334590885">
+					<object class="NSMenuItem" id="22925005">
 						<reference key="NSMenu" ref="399748308"/>
-						<string key="NSTitle">Quit</string>
+						<string key="NSTitle">Quit Continuum</string>
 						<string key="NSKeyEquiv">q</string>
 						<int key="NSKeyEquivModMask">1048576</int>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="748338856"/>
-						<reference key="NSMixedImage" ref="420916851"/>
+						<reference key="NSOnImage" ref="454638628"/>
+						<reference key="NSMixedImage" ref="843511103"/>
 					</object>
 				</array>
 			</object>
@@ -86,11 +84,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">newDocument:</string>
-						<reference key="source" ref="1003"/>
-						<reference key="destination" ref="585223967"/>
+						<string key="label">terminate:</string>
+						<reference key="source" ref="1004"/>
+						<reference key="destination" ref="22925005"/>
 					</object>
-					<int key="connectionID">8</int>
+					<int key="connectionID">10</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -123,16 +121,11 @@
 						<int key="objectID">1</int>
 						<reference key="object" ref="399748308"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="585223967"/>
 							<reference ref="334590885"/>
 							<reference ref="612389367"/>
+							<reference ref="22925005"/>
 						</array>
 						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">2</int>
-						<reference key="object" ref="585223967"/>
-						<reference key="parent" ref="399748308"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">4</int>
@@ -144,6 +137,11 @@
 						<reference key="object" ref="612389367"/>
 						<reference key="parent" ref="399748308"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">9</int>
+						<reference key="object" ref="22925005"/>
+						<reference key="parent" ref="399748308"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -152,15 +150,15 @@
 				<string key="-3.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="1.CustomClassName">CLStatusItemMenu</string>
 				<string key="1.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="9.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">8</int>
+			<int key="maxID">10</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

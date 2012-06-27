@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		FF05E29B159B41D60051060B /* CLDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = FF05E29A159B41D60051060B /* CLDataProvider.m */; };
 		FF167A8E14FA9B5B00C9DA0B /* CLItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */; };
 		FF167A9114FAA11200C9DA0B /* CLDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = FF167A9014FAA11200C9DA0B /* CLDefines.m */; };
 		FF6C27BB1520E9FB0000371A /* CLModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF6C27B91520E9FB0000371A /* CLModel.xcdatamodeld */; };
@@ -44,6 +45,7 @@
 		FF9705A814FA88B70083413C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058A14FA88B60083413C /* Foundation.framework */; };
 		FF9705A914FA88B70083413C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF97058E14FA88B60083413C /* CoreData.framework */; };
 		FF97FC4B14FA981900CBCFF1 /* CLStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF97FC4A14FA981900CBCFF1 /* CLStoryboard.storyboard */; };
+		FFE2AFBE159667DA00E8CCDF /* libIRFoundationsTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF85744152B7E26001B3E92 /* libIRFoundationsTouch.a */; };
 		FFF856B3152B7373001B3E92 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF9705A514FA88B70083413C /* SenTestingKit.framework */; };
 		FFF8571E152B7665001B3E92 /* CLAppDelegate_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF8571D152B7665001B3E92 /* CLAppDelegate_iOS.m */; };
 		FFF85722152B77E5001B3E92 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF85721152B77E5001B3E92 /* Cocoa.framework */; };
@@ -66,12 +68,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FF05E22A159B40700051060B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF8573A152B7E25001B3E92 /* IRFoundations.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FF6380D8153754430023C7AB;
+			remoteInfo = IRFoundationsTouchTest;
+		};
+		FF05E22C159B40700051060B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF8573A152B7E25001B3E92 /* IRFoundations.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FF3BE06715375564004C5244;
+			remoteInfo = IRFoundationsTouchTestHost;
+		};
 		FF9705AA14FA88B70083413C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FF97057B14FA88B60083413C /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FF97058314FA88B60083413C;
 			remoteInfo = cloudy;
+		};
+		FFE2AFBF159667E800E8CCDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF8573A152B7E25001B3E92 /* IRFoundations.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FF0A8BA81337AFB700DDA47C;
+			remoteInfo = IRFoundationsTouch;
 		};
 		FFF856B5152B7373001B3E92 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -118,6 +141,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF05E299159B41D60051060B /* CLDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLDataProvider.h; path = cloudy/CLDataProvider.h; sourceTree = "<group>"; };
+		FF05E29A159B41D60051060B /* CLDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLDataProvider.m; path = cloudy/CLDataProvider.m; sourceTree = "<group>"; };
 		FF167A8C14FA9B5B00C9DA0B /* CLItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLItemsViewController.h; path = cloudy/CLItemsViewController.h; sourceTree = "<group>"; };
 		FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLItemsViewController.m; path = cloudy/CLItemsViewController.m; sourceTree = "<group>"; };
 		FF167A8F14FAA0D700C9DA0B /* CLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDefines.h; sourceTree = "<group>"; };
@@ -188,6 +213,7 @@
 				FF97058B14FA88B60083413C /* Foundation.framework in Frameworks */,
 				FF97058F14FA88B60083413C /* CoreData.framework in Frameworks */,
 				FF7AF0FE1520E32900B04AAB /* Parse.framework in Frameworks */,
+				FFE2AFBE159667DA00E8CCDF /* libIRFoundationsTouch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +251,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF05E297159B41B50051060B /* Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				FF97FC4A14FA981900CBCFF1 /* CLStoryboard.storyboard */,
+				FF6C27C11520F2FB0000371A /* CLOnboardingViewController.h */,
+				FF6C27C21520F2FB0000371A /* CLOnboardingViewController.m */,
+				FF167A8C14FA9B5B00C9DA0B /* CLItemsViewController.h */,
+				FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */,
+			);
+			name = Mobile;
+			sourceTree = "<group>";
+		};
+		FF05E298159B41C60051060B /* Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				FFF8576F152B849A001B3E92 /* CLStatusItem.h */,
+				FFF85770152B849A001B3E92 /* CLStatusItem.m */,
+				FF05E299159B41D60051060B /* CLDataProvider.h */,
+				FF05E29A159B41D60051060B /* CLDataProvider.m */,
+			);
+			name = Desktop;
+			sourceTree = "<group>";
+		};
 		FF5357BD152C8B35004BB5B7 /* Scripting Bridge Definitions */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,13 +288,8 @@
 				FF97059114FA88B60083413C /* Environment */,
 				FFF857D1152B8A89001B3E92 /* Scaffold */,
 				FFF857D2152B8B3F001B3E92 /* Model */,
-				FF6C27C11520F2FB0000371A /* CLOnboardingViewController.h */,
-				FF6C27C21520F2FB0000371A /* CLOnboardingViewController.m */,
-				FF167A8C14FA9B5B00C9DA0B /* CLItemsViewController.h */,
-				FF167A8D14FA9B5B00C9DA0B /* CLItemsViewController.m */,
-				FFF8576F152B849A001B3E92 /* CLStatusItem.h */,
-				FFF85770152B849A001B3E92 /* CLStatusItem.m */,
-				FF97FC4A14FA981900CBCFF1 /* CLStoryboard.storyboard */,
+				FF05E297159B41B50051060B /* Mobile */,
+				FF05E298159B41C60051060B /* Desktop */,
 				FF5357BD152C8B35004BB5B7 /* Scripting Bridge Definitions */,
 				FFF85738152B7B34001B3E92 /* Resources */,
 				FFF857D0152B8A6E001B3E92 /* Frameworks */,
@@ -328,6 +372,8 @@
 				FFF85744152B7E26001B3E92 /* libIRFoundationsTouch.a */,
 				FFF85746152B7E26001B3E92 /* IRFoundationsX.framework */,
 				FFF85748152B7E26001B3E92 /* IRFoundationsTest.octest */,
+				FF05E22B159B40700051060B /* IRFoundationsTouchTest.octest */,
+				FF05E22D159B40700051060B /* IRFoundationsTouchTestHost.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -380,6 +426,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				FFE2AFC0159667E800E8CCDF /* PBXTargetDependency */,
 			);
 			name = "cloudy-iOS";
 			productName = cloudy;
@@ -480,6 +527,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		FF05E22B159B40700051060B /* IRFoundationsTouchTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IRFoundationsTouchTest.octest;
+			remoteRef = FF05E22A159B40700051060B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF05E22D159B40700051060B /* IRFoundationsTouchTestHost.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = IRFoundationsTouchTestHost.app;
+			remoteRef = FF05E22C159B40700051060B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		FFF85744152B7E26001B3E92 /* libIRFoundationsTouch.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -630,6 +691,7 @@
 				FFF85739152B7BC9001B3E92 /* CLModel.xcdatamodeld in Sources */,
 				FFF85771152B849A001B3E92 /* CLStatusItem.m in Sources */,
 				FFF857D6152B8B53001B3E92 /* CLDataStore.m in Sources */,
+				FF05E29B159B41D60051060B /* CLDataProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +709,11 @@
 			isa = PBXTargetDependency;
 			target = FF97058314FA88B60083413C /* cloudy-iOS */;
 			targetProxy = FF9705AA14FA88B70083413C /* PBXContainerItemProxy */;
+		};
+		FFE2AFC0159667E800E8CCDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IRFoundationsTouch;
+			targetProxy = FFE2AFBF159667E800E8CCDF /* PBXContainerItemProxy */;
 		};
 		FFF856B6152B7373001B3E92 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
